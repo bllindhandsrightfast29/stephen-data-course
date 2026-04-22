@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Week 10: Python &amp; Pandas Foundations | Claude Co-Work</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+<div class="layout">
+<aside class="sidebar">
+  <a href="../index.html" class="site-title">Claude Co-Work</a>
+  <div class="site-tagline">Data Analytics Career Pivot &middot; 12 Weeks</div>
+  <div class="nav-section"><div class="nav-label">Course</div><ul class="nav-list"><li><a href="../index.html">Course Home</a></li></ul></div>
+  <div class="nav-section"><div class="nav-label">Phase 1 &middot; Foundation</div><ul class="nav-list"><li><a href="../phase-1/index.html">Phase Overview</a></li><ul class="nav-list nav-sub"><li><a href="../phase-1/week-01.html">Week 1: Claude as Pair Partner</a></li><li><a href="../phase-1/week-02.html">Week 2: Advanced Sheets/Excel</a></li><li><a href="../phase-1/week-03.html">Week 3: Financial Analysis</a></li></ul></ul></div>
+  <div class="nav-section"><div class="nav-label">Phase 2 &middot; SQL</div><ul class="nav-list"><li><a href="../phase-2/index.html">Phase Overview</a></li><ul class="nav-list nav-sub"><li><a href="../phase-2/week-04.html">Week 4: SQL Basics</a></li><li><a href="../phase-2/week-05.html">Week 5: Joins &amp; Aggregates</a></li><li><a href="../phase-2/week-06.html">Week 6: Analyst-Grade SQL</a></li></ul></ul></div>
+  <div class="nav-section"><div class="nav-label">Phase 3 &middot; Visualization</div><ul class="nav-list"><li><a href="../phase-3/index.html">Phase Overview</a></li><ul class="nav-list nav-sub"><li><a href="../phase-3/week-07.html">Week 7: Dashboard Fundamentals</a></li><li><a href="../phase-3/week-08.html">Week 8: Business Dashboards</a></li><li><a href="../phase-3/week-09.html">Week 9: Portfolio Assembly</a></li></ul></ul></div>
+  <div class="nav-section"><div class="nav-label">Phase 4 &middot; Python &amp; Capstone</div><ul class="nav-list"><li><a href="index.html">Phase Overview</a></li><ul class="nav-list nav-sub"><li><a href="week-10.html" class="current">Week 10: Python &amp; Pandas</a></li><li><a href="week-11.html">Week 11: Analytics Pandas</a></li><li><a href="week-12.html">Week 12: Capstone</a></li></ul></ul></div>
+  <div class="nav-section"><div class="nav-label">Tools</div><ul class="nav-list"><li><a href="../cert-tracker.html">Cert Tracker</a></li><li><a href="../resources/index.html">Resources</a></li></ul></div>
+</aside>
+
+<main class="main">
+<div class="course-header">
+  <div class="crumb"><a href="../index.html">Course Home</a> &rsaquo; <a href="index.html">Phase 4</a> &rsaquo; Week 10</div>
+  <h1>Week 10 &mdash; Python &amp; Pandas Foundations</h1>
+  <div class="tag-row"><span class="tag">Phase 4 &middot; Python</span><span class="tag">Skill Focus: Command AI (pandas)</span><span class="tag">~15 hours</span></div>
+  <div class="progress-bar"><span class="progress-bar-label">Course Progress</span><div class="progress-bar-track"><div class="progress-bar-fill" style="width: 83.3%"></div></div><span class="progress-bar-label">Week 10 of 12</span></div>
+</div>
+
+<button class="btn btn-secondary print-btn" onclick="window.print()">Print this packet</button>
+
+<section>
+  <p class="lead">Python syntax. Pandas DataFrame fundamentals. Google Colab as your working environment. Rebuild Chinook in pandas so you can translate fluently between SQL and pandas &mdash; most of what pandas interviews test.</p>
+</section>
+
+<section>
+  <h2>Learning Goals</h2>
+  <div class="goal-list">
+    <ul>
+      <li>Python syntax basics (variables, control flow, functions, comprehensions)</li>
+      <li>Pandas fundamentals: read_csv, filter, groupby, merge</li>
+      <li>Drill Skill #2 again in pandas context &mdash; LDTV loop: Load, Describe, Transform, Validate</li>
+      <li>Ship: Chinook-in-pandas notebook + reflection on SQL-vs-pandas tradeoffs</li>
+    </ul>
+  </div>
+</section>
+
+<div class="locked-preview">
+  <h3>Content Releases After Week 9</h3>
+  <p>Full LDTV loop drill, Colab setup walkthrough, and Chinook-in-pandas rebuild template unlock after Phase 3 completion.</p>
+</div>
+
+<section>
+  <h2>AI Co-Work Pattern (Preview) &mdash; The LDTV Loop</h2>
+  <p><strong>L</strong>oad (paste <code>df.info()</code> and <code>df.head()</code>, confirm Claude sees the dtypes). <strong>D</strong>escribe (English transformation, not code). <strong>T</strong>ransform (Claude writes pandas, you run in Colab). <strong>V</strong>alidate (paste output, ask Claude to walk the cross-check vs an equivalent SQL path).</p>
+</section>
+
+<section>
+  <h2>Resources (Preview)</h2>
+  <ul>
+    <li><a href="https://www.kaggle.com/learn/python" rel="noopener">Kaggle Python</a> (skip if Python is familiar)</li>
+    <li><a href="https://www.kaggle.com/learn/pandas" rel="noopener">Kaggle Pandas</a> (free cert, core this week)</li>
+    <li><a href="https://colab.research.google.com" rel="noopener">Google Colab</a> (free T4 tier)</li>
+    <li><a href="https://github.com/microsoft/Data-Science-For-Beginners" rel="noopener">MS DS-for-Beginners</a> Python section</li>
+    <li>Alex the Analyst: Python &amp; pandas videos (see <a href="../resources/alex-companion.html">Alex Companion</a>)</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Mini-Project (Preview)</h2>
+  <p>Redo the ten Chinook SQL questions from Week 4 in pandas. Same answers, different tool. Add a reflection: &ldquo;Which tool was better for each question and why?&rdquo; This reflection is what separates you from a bootcamp grad in an interview.</p>
+</section>
+
+<section>
+  <h2>Cert Progress</h2>
+  <p>Kaggle Pandas cert earned. Fifth (or fourth, if GAIQ skipped) free cert in the portfolio.</p>
+</section>
+
+<div class="page-nav">
+  <a href="../phase-3/week-09.html"><span class="label">&larr; Previous</span><span class="title">Week 9: Portfolio Assembly</span></a>
+  <a href="week-11.html" class="next"><span class="label">Next &rarr;</span><span class="title">Week 11: Analytics Pandas</span></a>
+</div>
+
+<div class="site-footer">Built for Stephen Branch by Jon Hayles (Muse, 2026) &middot; Design inspired by <a href="https://html5up.net/editorial" rel="noopener">HTML5 UP Editorial</a> (CC-BY 3.0)</div>
+</main>
+</div>
+</body>
+</html>

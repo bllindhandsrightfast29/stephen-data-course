@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Week 2: Advanced Sheets &amp; Excel | Claude Co-Work</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+<div class="layout">
+<aside class="sidebar">
+  <a href="../index.html" class="site-title">Claude Co-Work</a>
+  <div class="site-tagline">Data Analytics Career Pivot &middot; 12 Weeks</div>
+  <div class="nav-section"><div class="nav-label">Course</div><ul class="nav-list"><li><a href="../index.html">Course Home</a></li></ul></div>
+  <div class="nav-section"><div class="nav-label">Phase 1 &middot; Foundation</div><ul class="nav-list"><li><a href="index.html">Phase Overview</a></li><ul class="nav-list nav-sub"><li><a href="week-01.html">Week 1: Claude as Pair Partner</a></li><li><a href="week-02.html" class="current">Week 2: Advanced Sheets/Excel</a></li><li><a href="week-03.html">Week 3: Financial Analysis</a></li></ul></ul></div>
+  <div class="nav-section"><div class="nav-label">Phase 2 &middot; SQL</div><ul class="nav-list"><li><a href="../phase-2/index.html">Phase Overview</a></li><ul class="nav-list nav-sub"><li><a href="../phase-2/week-04.html" class="locked">Week 4: SQL Basics</a></li><li><a href="../phase-2/week-05.html" class="locked">Week 5: Joins &amp; Aggregates</a></li><li><a href="../phase-2/week-06.html" class="locked">Week 6: Analyst-Grade SQL</a></li></ul></ul></div>
+  <div class="nav-section"><div class="nav-label">Phase 3 &middot; Visualization</div><ul class="nav-list"><li><a href="../phase-3/index.html">Phase Overview</a></li><ul class="nav-list nav-sub"><li><a href="../phase-3/week-07.html" class="locked">Week 7: Dashboard Fundamentals</a></li><li><a href="../phase-3/week-08.html" class="locked">Week 8: Business Dashboards</a></li><li><a href="../phase-3/week-09.html" class="locked">Week 9: Portfolio Assembly</a></li></ul></ul></div>
+  <div class="nav-section"><div class="nav-label">Phase 4 &middot; Python &amp; Capstone</div><ul class="nav-list"><li><a href="../phase-4/index.html">Phase Overview</a></li><ul class="nav-list nav-sub"><li><a href="../phase-4/week-10.html" class="locked">Week 10: Python &amp; Pandas</a></li><li><a href="../phase-4/week-11.html" class="locked">Week 11: Analytics Pandas</a></li><li><a href="../phase-4/week-12.html" class="locked">Week 12: Capstone</a></li></ul></ul></div>
+  <div class="nav-section"><div class="nav-label">Tools</div><ul class="nav-list"><li><a href="../cert-tracker.html">Cert Tracker</a></li><li><a href="../resources/index.html">Resources</a></li></ul></div>
+</aside>
+
+<main class="main">
+<div class="course-header">
+  <div class="crumb"><a href="../index.html">Course Home</a> &rsaquo; <a href="index.html">Phase 1</a> &rsaquo; Week 2</div>
+  <h1>Week 2 &mdash; Advanced Sheets &amp; Excel (AI-Assisted)</h1>
+  <div class="tag-row"><span class="tag">Phase 1 &middot; Foundation</span><span class="tag">Skill Focus: Command AI to Execute</span><span class="tag">~14 hours</span></div>
+  <div class="progress-bar"><span class="progress-bar-label">Course Progress</span><div class="progress-bar-track"><div class="progress-bar-fill" style="width: 16.6%"></div></div><span class="progress-bar-label">Week 2 of 12</span></div>
+</div>
+
+<button class="btn btn-secondary print-btn" onclick="window.print()">Print this packet</button>
+
+<section>
+  <p class="lead">Level up Excel/Sheets beyond what you used in treasury. Build muscle memory for &ldquo;describe what I want, get a formula, validate it.&rdquo; By week's end you can run a full Treasury Ops Dashboard workbook without writing a formula from scratch.</p>
+</section>
+
+<section>
+  <h2>Learning Goals</h2>
+  <div class="goal-list">
+    <ul>
+      <li>Master INDEX/MATCH, XLOOKUP, dynamic arrays, LAMBDA, pivots with calculated fields</li>
+      <li>Drill Skill #2: command AI to execute a data question &mdash; formula edition</li>
+      <li>Ship the <strong>Treasury Operations Dashboard Workbook</strong> to your portfolio</li>
+    </ul>
+  </div>
+</section>
+
+<div class="locked-preview">
+  <h3>Content Releases After Week 1</h3>
+  <p>Full drill content, mini-project details, prompt library, and portfolio template will unlock after you complete and commit the Week 1 portfolio entry. Preview the shape of the week below so you can plan.</p>
+</div>
+
+<section>
+  <h2>AI Co-Work Pattern (Preview)</h2>
+  <p>Skill #2: You describe a transformation in plain English, Claude returns a formula, you paste into Sheets, you validate. Sample drill:</p>
+  <pre><code>I have a Google Sheet with columns A=invoice_date, B=customer,
+C=amount, D=paid_date. I want a formula in column E that returns
+"days to pay" when D is populated, "open - [N] days" when D is
+blank and A is more than 30 days old, and "current" otherwise.
+Write me the formula.</code></pre>
+  <p>That is one Skill #2 rep. You will do twenty this week.</p>
+</section>
+
+<section>
+  <h2>Resources (Preview)</h2>
+  <ul>
+    <li>Microsoft Excel/Sheets advanced tutorials (YouTube: ExcelIsFun, free)</li>
+    <li>Google Sheets Advanced Formulas cheat sheet</li>
+    <li><a href="https://www.sec.gov/data-research/sec-markets-data/financial-statement-data-sets" rel="noopener">SEC EDGAR financial statement data sets</a> (public domain)</li>
+    <li><a href="https://fred.stlouisfed.org" rel="noopener">FRED</a> for macro context (free API key)</li>
+    <li>Alex the Analyst: Excel playlist (see <a href="../resources/alex-companion.html">Alex Companion</a>)</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Mini-Project (Preview)</h2>
+  <p>Build a <strong>Treasury Operations Dashboard Workbook</strong> with five tabs: raw AP/AR data (500 rows, realistic), aged receivables pivot, 12-week cash flow forecast, variance analysis, and written executive summary. Every formula gets a comment explaining what it does. Every calculation is Claude-assisted, then manually verified against a second method.</p>
+</section>
+
+<section>
+  <h2>Cert Progress</h2>
+  <p>CFI Excel Crash Course (free tier) is the target this week. Optional but a clean resume line.</p>
+</section>
+
+<div class="page-nav">
+  <a href="week-01.html"><span class="label">&larr; Previous</span><span class="title">Week 1: Claude as Pair Partner</span></a>
+  <a href="week-03.html" class="next"><span class="label">Next &rarr;</span><span class="title">Week 3: Financial Analysis</span></a>
+</div>
+
+<div class="site-footer">Built for Stephen Branch by Jon Hayles (Muse, 2026) &middot; Design inspired by <a href="https://html5up.net/editorial" rel="noopener">HTML5 UP Editorial</a> (CC-BY 3.0)</div>
+</main>
+</div>
+</body>
+</html>

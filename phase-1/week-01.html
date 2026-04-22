@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Week 1: Claude as Pair Partner | Claude Co-Work</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+<div class="layout">
+
+<aside class="sidebar">
+  <a href="../index.html" class="site-title">Claude Co-Work</a>
+  <div class="site-tagline">Data Analytics Career Pivot &middot; 12 Weeks</div>
+
+  <div class="nav-section">
+    <div class="nav-label">Course</div>
+    <ul class="nav-list">
+      <li><a href="../index.html">Course Home</a></li>
+    </ul>
+  </div>
+
+  <div class="nav-section">
+    <div class="nav-label">Phase 1 &middot; Foundation</div>
+    <ul class="nav-list">
+      <li><a href="index.html">Phase Overview</a></li>
+      <ul class="nav-list nav-sub">
+        <li><a href="week-01.html" class="current">Week 1: Claude as Pair Partner</a></li>
+        <li><a href="week-02.html">Week 2: Advanced Sheets/Excel</a></li>
+        <li><a href="week-03.html">Week 3: Financial Analysis</a></li>
+      </ul>
+    </ul>
+  </div>
+
+  <div class="nav-section">
+    <div class="nav-label">Phase 2 &middot; SQL</div>
+    <ul class="nav-list">
+      <li><a href="../phase-2/index.html">Phase Overview</a></li>
+      <ul class="nav-list nav-sub">
+        <li><a href="../phase-2/week-04.html" class="locked">Week 4: SQL Basics</a></li>
+        <li><a href="../phase-2/week-05.html" class="locked">Week 5: Joins &amp; Aggregates</a></li>
+        <li><a href="../phase-2/week-06.html" class="locked">Week 6: Analyst-Grade SQL</a></li>
+      </ul>
+    </ul>
+  </div>
+
+  <div class="nav-section">
+    <div class="nav-label">Phase 3 &middot; Visualization</div>
+    <ul class="nav-list">
+      <li><a href="../phase-3/index.html">Phase Overview</a></li>
+      <ul class="nav-list nav-sub">
+        <li><a href="../phase-3/week-07.html" class="locked">Week 7: Dashboard Fundamentals</a></li>
+        <li><a href="../phase-3/week-08.html" class="locked">Week 8: Business Dashboards</a></li>
+        <li><a href="../phase-3/week-09.html" class="locked">Week 9: Portfolio Assembly</a></li>
+      </ul>
+    </ul>
+  </div>
+
+  <div class="nav-section">
+    <div class="nav-label">Phase 4 &middot; Python &amp; Capstone</div>
+    <ul class="nav-list">
+      <li><a href="../phase-4/index.html">Phase Overview</a></li>
+      <ul class="nav-list nav-sub">
+        <li><a href="../phase-4/week-10.html" class="locked">Week 10: Python &amp; Pandas</a></li>
+        <li><a href="../phase-4/week-11.html" class="locked">Week 11: Analytics Pandas</a></li>
+        <li><a href="../phase-4/week-12.html" class="locked">Week 12: Capstone</a></li>
+      </ul>
+    </ul>
+  </div>
+
+  <div class="nav-section">
+    <div class="nav-label">Tools</div>
+    <ul class="nav-list">
+      <li><a href="../cert-tracker.html">Cert Tracker</a></li>
+      <li><a href="../resources/index.html">Resources</a></li>
+    </ul>
+  </div>
+</aside>
+
+<main class="main">
+
+<div class="course-header">
+  <div class="crumb"><a href="../index.html">Course Home</a> &rsaquo; <a href="index.html">Phase 1</a> &rsaquo; Week 1</div>
+  <h1>Week 1 &mdash; Claude as Pair Partner</h1>
+  <div class="tag-row">
+    <span class="tag">Phase 1 &middot; Foundation</span>
+    <span class="tag">Skill Focus: Translate Problem &rarr; Data Question</span>
+    <span class="tag">~13 hours</span>
+  </div>
+  <div class="progress-bar">
+    <span class="progress-bar-label">Course Progress</span>
+    <div class="progress-bar-track"><div class="progress-bar-fill" style="width: 8.3%"></div></div>
+    <span class="progress-bar-label">Week 1 of 12</span>
+  </div>
+</div>
+
+<button class="btn btn-secondary print-btn" onclick="window.print()">Print this packet</button>
+
+<section>
+  <p class="lead">Stop thinking of Claude as a search engine. Most people treat Claude like Google with personality &mdash; ask a question, skim the answer, move on. That is lookup. Co-work is different. This week you build the foundational habit every other week depends on.</p>
+</section>
+
+<section>
+  <h2>Learning Goals</h2>
+  <div class="goal-list">
+    <ul>
+      <li>Build the habit of writing-before-prompting &mdash; you are the author, Claude is the senior reviewer</li>
+      <li>Drill Skill #1: translate a business problem into a precise, SQL-able data question</li>
+      <li>Ship your first public GitHub portfolio entry: &ldquo;My treasury career in 5 analyses&rdquo;</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h2>AI Co-Work Pattern &mdash; Skill #1</h2>
+  <div class="callout featured">
+    <h3>This is the course's moat &mdash; read carefully</h3>
+    <p>Every treasury problem is secretly a data question wearing a suit. Your boss says &ldquo;AR is climbing, why?&rdquo; That is a business problem. The data question might be: <em>&ldquo;For invoices aged 60+ days in Q1 2026 vs Q1 2025, by customer segment, what is the distribution of days-outstanding and has the mix shifted?&rdquo;</em> You translate. Claude does not know your business. You do.</p>
+  </div>
+
+  <h3>The Four-Step Drill</h3>
+  <p>For each of your five treasury questions this week, run this exact sequence:</p>
+
+  <h4>Step 1 &mdash; Write it yourself, no AI</h4>
+  <p>In your notebook, write the business problem (1-2 sentences) and your first-cut data question (1 sentence, as precise as you can make it). Do not open Claude yet. This is the muscle.</p>
+
+  <h4>Step 2 &mdash; Paste to Claude, ask for critique</h4>
+  <p>Copy this prompt template (you will reuse it all course):</p>
+  <pre><code>I am trying to translate a treasury business problem into a precise
+data question. Here is my attempt.
+
+Business problem: [yours]
+Data question: [yours]
+
+Critique the data question on three dimensions:
+1. Is it precise enough that someone could write SQL against it?
+2. What ambiguity remains (dates, grain, filters, definitions)?
+3. What are 2-3 follow-up data questions that would make this
+   analysis more useful?
+
+Do not rewrite my question for me. Point at the gaps.
+I will rewrite.</code></pre>
+
+  <h4>Step 3 &mdash; Rewrite it yourself, alone again</h4>
+  <p>Based on Claude's critique, rewrite <strong>your</strong> data question. Do not paste Claude's version. Paste your rewrite back for the final check.</p>
+
+  <h4>Step 4 &mdash; Validate with engineer-stress-test</h4>
+  <pre><code>Here is my rewritten data question: [yours v2]
+
+Act as a data engineer who just received this as a ticket.
+What clarifying questions would you ask before writing SQL?</code></pre>
+  <p>If engineer-Claude has zero clarifying questions, your question is tight. Three or more, your question needs work.</p>
+
+  <div class="callout warn">
+    <h3>Trap to avoid</h3>
+    <p>&ldquo;Claude, what data questions should I write for treasury?&rdquo; &mdash; that is lookup, not co-work. You would get generic answers. Your real lived experience generates better questions than Claude's training data can.</p>
+  </div>
+</section>
+
+<section>
+  <h2>Resources (Verified Live 2026-04-21)</h2>
+  <table>
+    <tr><th>Resource</th><th>Notes</th></tr>
+    <tr>
+      <td><a href="https://claude.ai" rel="noopener">claude.ai</a></td>
+      <td>Sign up for Pro ($20/mo). Enable Projects. Create one called &ldquo;Stephen Data Pivot&rdquo;.</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/microsoft/Data-Science-For-Beginners" rel="noopener">Microsoft Data-Science-For-Beginners</a></td>
+      <td>Lesson 1 only this week. MIT licensed. 10-week structure, 34.9k stars.</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.youtube.com/c/joshstarmer" rel="noopener">StatQuest (Josh Starmer)</a></td>
+      <td>Start the &ldquo;Statistics Fundamentals&rdquo; playlist. One video per day.</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/" rel="noopener">GitHub</a></td>
+      <td>Create a free account if you don't have one. You will commit your first entry Saturday.</td>
+    </tr>
+  </table>
+  <p class="lead" style="font-size: 0.9em; margin-top: -0.5em;">Links verified live 2026-04-21 via <code>gh api</code>, WebFetch, and curl HEAD checks.</p>
+</section>
+
+<section>
+  <h2>Companion Video</h2>
+  <div class="callout">
+    <h3>Alex the Analyst Bootcamp</h3>
+    <p>Watch <a href="https://www.youtube.com/@AlexTheAnalyst" rel="noopener">Alex the Analyst's &ldquo;What Does a Data Analyst Actually Do?&rdquo;</a> on YouTube (free). Then preview his full Data Analyst Bootcamp playlist &mdash; we map his videos to our weeks on the <a href="../resources/alex-companion.html">Alex Companion</a> page.</p>
+    <p><strong>Note:</strong> Alex uses SSMS and Anaconda. You will translate to DB Fiddle and Colab. Same skills, lighter tooling.</p>
+  </div>
+</section>
+
+<section>
+  <h2>Mini-Project &mdash; Five Treasury Questions</h2>
+  <p>Write a ~1,500-word document titled <strong>&ldquo;5 data questions I could have answered in my last treasury job.&rdquo;</strong></p>
+  <p>For each of the five questions, include:</p>
+  <ul>
+    <li><strong>Business problem</strong> &mdash; 2 sentences, plain English</li>
+    <li><strong>Data question</strong> &mdash; precise, SQL-able even if you can't write SQL yet</li>
+    <li><strong>Data required</strong> &mdash; tables, fields, grain (daily? per-invoice?)</li>
+    <li><strong>Decision informed</strong> &mdash; what would have changed if you had the answer?</li>
+  </ul>
+  <p>This is a stealth exercise. You are drilling Skill #1 on territory you know cold. By end of week you can translate any finance problem into a data question &mdash; rarer than SQL syntax, and worth more on a resume.</p>
+</section>
+
+<section>
+  <h2>Portfolio Entry Template</h2>
+  <div class="callout">
+    <h3>Commit Saturday: <code>portfolio/week_01_five_treasury_questions.md</code></h3>
+    <p>File should contain:</p>
+    <ol>
+      <li>A short intro (3&ndash;4 sentences) &mdash; who you are, why this pivot, what this document demonstrates</li>
+      <li>Five numbered sections, one per question, with the four fields above</li>
+      <li>A closing paragraph: what you learned about your own domain while writing this</li>
+    </ol>
+    <p>Push to your public GitHub repo named <code>stephen-data-portfolio</code>. This is your first public commit. It will look spare this week. That is fine. Week 12's entry will make this one look like a sapling next to an oak.</p>
+  </div>
+</section>
+
+<section>
+  <h2>Time Budget</h2>
+  <table>
+    <tr><th>Block</th><th>Hours</th><th>Notes</th></tr>
+    <tr><td>Read course orientation (Course Home, this page)</td><td>2</td><td>Monday</td></tr>
+    <tr><td>Microsoft DS-for-Beginners Lesson 1 + StatQuest daily video</td><td>3</td><td>Tue&ndash;Wed</td></tr>
+    <tr><td>Draft and iterate the 5 questions document with Claude</td><td>5</td><td>Thu&ndash;Fri (cowork)</td></tr>
+    <tr><td>Portfolio entry + GitHub setup + first commit</td><td>2</td><td>Saturday</td></tr>
+    <tr><td>Sunday check-in with Jon</td><td>1</td><td>Voice or video, 60 min</td></tr>
+    <tr><td><strong>Total</strong></td><td><strong>13</strong></td><td>Light by design &mdash; build the habit infrastructure</td></tr>
+  </table>
+</section>
+
+<section>
+  <h2>How This Builds Forward</h2>
+  <p>Every subsequent week you will translate new problems into data questions. This week you drill on home turf (treasury) so the translation mechanics are clear. Weeks 4+ apply it to unfamiliar domains (retail, music sales, public debt) and the skill has to hold up there too. If you can translate in Week 1, you can translate anywhere by Week 12.</p>
+</section>
+
+<section>
+  <h2>Before You Start &mdash; Setup Checklist</h2>
+  <div class="goal-list">
+    <ul>
+      <li>Claude Pro subscription active ($20/mo &mdash; Jon reimburses first 3 months)</li>
+      <li>GitHub account created (free tier is fine)</li>
+      <li>Claude Project &ldquo;Stephen Data Pivot&rdquo; created with system prompt (see <a href="../resources/prompt-library.html">prompt library</a>)</li>
+      <li>Notebook or Obsidian vault set up for logging what you learn</li>
+      <li>LinkedIn headline updated to &ldquo;Data Analyst in Training&rdquo; (stripped before Week 9)</li>
+    </ul>
+  </div>
+</section>
+
+<div class="page-nav">
+  <a href="../index.html">
+    <span class="label">&larr; Previous</span>
+    <span class="title">Course Home</span>
+  </a>
+  <a href="week-02.html" class="next">
+    <span class="label">Next &rarr;</span>
+    <span class="title">Week 2: Advanced Sheets/Excel</span>
+  </a>
+</div>
+
+<div class="site-footer">
+  Built for Stephen Branch by Jon Hayles (Muse, 2026) &middot; Design inspired by
+  <a href="https://html5up.net/editorial" rel="noopener">HTML5 UP Editorial</a> (CC-BY 3.0)
+</div>
+
+</main>
+</div>
+</body>
+</html>

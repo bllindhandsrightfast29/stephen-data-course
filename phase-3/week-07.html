@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Week 7: Dashboard Fundamentals | Claude Co-Work</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+<div class="layout">
+<aside class="sidebar">
+  <a href="../index.html" class="site-title">Claude Co-Work</a>
+  <div class="site-tagline">Data Analytics Career Pivot &middot; 12 Weeks</div>
+  <div class="nav-section"><div class="nav-label">Course</div><ul class="nav-list"><li><a href="../index.html">Course Home</a></li></ul></div>
+  <div class="nav-section"><div class="nav-label">Phase 1 &middot; Foundation</div><ul class="nav-list"><li><a href="../phase-1/index.html">Phase Overview</a></li><ul class="nav-list nav-sub"><li><a href="../phase-1/week-01.html">Week 1: Claude as Pair Partner</a></li><li><a href="../phase-1/week-02.html">Week 2: Advanced Sheets/Excel</a></li><li><a href="../phase-1/week-03.html">Week 3: Financial Analysis</a></li></ul></ul></div>
+  <div class="nav-section"><div class="nav-label">Phase 2 &middot; SQL</div><ul class="nav-list"><li><a href="../phase-2/index.html">Phase Overview</a></li><ul class="nav-list nav-sub"><li><a href="../phase-2/week-04.html">Week 4: SQL Basics</a></li><li><a href="../phase-2/week-05.html">Week 5: Joins &amp; Aggregates</a></li><li><a href="../phase-2/week-06.html">Week 6: Analyst-Grade SQL</a></li></ul></ul></div>
+  <div class="nav-section"><div class="nav-label">Phase 3 &middot; Visualization</div><ul class="nav-list"><li><a href="index.html">Phase Overview</a></li><ul class="nav-list nav-sub"><li><a href="week-07.html" class="current">Week 7: Dashboard Fundamentals</a></li><li><a href="week-08.html">Week 8: Business Dashboards</a></li><li><a href="week-09.html">Week 9: Portfolio Assembly</a></li></ul></ul></div>
+  <div class="nav-section"><div class="nav-label">Phase 4 &middot; Python &amp; Capstone</div><ul class="nav-list"><li><a href="../phase-4/index.html">Phase Overview</a></li><ul class="nav-list nav-sub"><li><a href="../phase-4/week-10.html" class="locked">Week 10: Python &amp; Pandas</a></li><li><a href="../phase-4/week-11.html" class="locked">Week 11: Analytics Pandas</a></li><li><a href="../phase-4/week-12.html" class="locked">Week 12: Capstone</a></li></ul></ul></div>
+  <div class="nav-section"><div class="nav-label">Tools</div><ul class="nav-list"><li><a href="../cert-tracker.html">Cert Tracker</a></li><li><a href="../resources/index.html">Resources</a></li></ul></div>
+</aside>
+
+<main class="main">
+<div class="course-header">
+  <div class="crumb"><a href="../index.html">Course Home</a> &rsaquo; <a href="index.html">Phase 3</a> &rsaquo; Week 7</div>
+  <h1>Week 7 &mdash; Dashboard Fundamentals with Tableau Public</h1>
+  <div class="tag-row"><span class="tag">Phase 3 &middot; Visualization</span><span class="tag">Skill Focus: Present the Insight</span><span class="tag">~15 hours</span></div>
+  <div class="progress-bar"><span class="progress-bar-label">Course Progress</span><div class="progress-bar-track"><div class="progress-bar-fill" style="width: 58.3%"></div></div><span class="progress-bar-label">Week 7 of 12</span></div>
+</div>
+
+<button class="btn btn-secondary print-btn" onclick="window.print()">Print this packet</button>
+
+<section>
+  <p class="lead">Chart type literacy. Tableau Public end-to-end: connect, build, publish. Non-terrible dashboard design principles (Few, Knaflic). Build the Macro Weather Report using FRED data.</p>
+</section>
+
+<section>
+  <h2>Learning Goals</h2>
+  <div class="goal-list">
+    <ul>
+      <li>When to use bar vs line vs scatter vs area vs heatmap (the right chart is rarely the first one)</li>
+      <li>Drill Skill #5: present the insight to non-technical stakeholders (viz edition)</li>
+      <li>Ship: FRED Macro Weather Report, published to Tableau Public with a shareable link</li>
+    </ul>
+  </div>
+</section>
+
+<div class="locked-preview">
+  <h3>Content Releases After Week 6</h3>
+  <p>Full Ten-Second Test pattern, FRED data pull walkthrough, and critique-rounds template unlock after Phase 2 completion.</p>
+</div>
+
+<section>
+  <h2>AI Co-Work Pattern (Preview) &mdash; The Ten-Second Test</h2>
+  <p>Build a draft, screenshot it, paste to Claude, ask for critique on four dimensions: 10-second insight, cognitive load, chart-type choices, story arc. Claude gives direct feedback. You iterate. Stop when Claude says &ldquo;this lands.&rdquo;</p>
+</section>
+
+<section>
+  <h2>Resources (Preview)</h2>
+  <ul>
+    <li><a href="https://public.tableau.com/app/resources/learn" rel="noopener">Tableau Public</a> &mdash; free, workbooks downloadable</li>
+    <li><a href="https://www.tableau.com/learn/training" rel="noopener">Tableau training videos</a> (free tier)</li>
+    <li><a href="https://www.kaggle.com/learn/data-visualization" rel="noopener">Kaggle Data Visualization</a> (free cert)</li>
+    <li>Cole Knaflic &ldquo;Storytelling With Data&rdquo; blog</li>
+    <li><a href="https://fred.stlouisfed.org" rel="noopener">FRED</a> &mdash; primary data source this week</li>
+    <li>Alex the Analyst: Tableau playlist (see <a href="../resources/alex-companion.html">Alex Companion</a>)</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Mini-Project (Preview) &mdash; Macro Weather Report</h2>
+  <p>Using FRED: US unemployment (5yr trend), CPI with Fed target overlay, 10Y&ndash;2Y Treasury spread with recession flag, GDP growth YoY bars, plus one executive-summary text box with your interpretation. Publish to Tableau Public. Share the link.</p>
+</section>
+
+<div class="page-nav">
+  <a href="../phase-2/week-06.html"><span class="label">&larr; Previous</span><span class="title">Week 6: Analyst-Grade SQL</span></a>
+  <a href="week-08.html" class="next"><span class="label">Next &rarr;</span><span class="title">Week 8: Business Dashboards</span></a>
+</div>
+
+<div class="site-footer">Built for Stephen Branch by Jon Hayles (Muse, 2026) &middot; Design inspired by <a href="https://html5up.net/editorial" rel="noopener">HTML5 UP Editorial</a> (CC-BY 3.0)</div>
+</main>
+</div>
+</body>
+</html>
