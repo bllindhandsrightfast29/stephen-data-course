@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Co-Work Prompt Library | Claude Co-Work</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+<div class="layout">
+<aside class="sidebar">
+  <a href="../index.html" class="site-title">Claude Co-Work</a>
+  <div class="site-tagline">Applied Data Analytics &middot; 12 Weeks</div>
+  <div class="nav-section"><div class="nav-label">Course</div><ul class="nav-list"><li><a href="../index.html">Course Home</a></li></ul></div>
+  <div class="nav-section"><div class="nav-label">Phase 1 &middot; Foundation</div><ul class="nav-list"><li><a href="../phase-1/index.html">Phase Overview</a></li><ul class="nav-list nav-sub"><li><a href="../phase-1/week-01.html">Week 1: Claude as Pair Partner</a></li><li><a href="../phase-1/week-02.html">Week 2: Advanced Sheets/Excel</a></li><li><a href="../phase-1/week-03.html">Week 3: Financial Analysis</a></li></ul></ul></div>
+  <div class="nav-section"><div class="nav-label">Phase 2 &middot; SQL</div><ul class="nav-list"><li><a href="../phase-2/index.html">Phase Overview</a></li><ul class="nav-list nav-sub"><li><a href="../phase-2/week-04.html">Week 4: SQL Basics</a></li><li><a href="../phase-2/week-05.html">Week 5: Joins &amp; Aggregates</a></li><li><a href="../phase-2/week-06.html">Week 6: Analyst-Grade SQL</a></li></ul></ul></div>
+  <div class="nav-section"><div class="nav-label">Phase 3 &middot; Visualization</div><ul class="nav-list"><li><a href="../phase-3/index.html">Phase Overview</a></li><ul class="nav-list nav-sub"><li><a href="../phase-3/week-07.html">Week 7: Dashboard Fundamentals</a></li><li><a href="../phase-3/week-08.html">Week 8: Business Dashboards</a></li><li><a href="../phase-3/week-09.html">Week 9: Portfolio Assembly</a></li></ul></ul></div>
+  <div class="nav-section"><div class="nav-label">Phase 4 &middot; Python &amp; Capstone</div><ul class="nav-list"><li><a href="../phase-4/index.html">Phase Overview</a></li><ul class="nav-list nav-sub"><li><a href="../phase-4/week-10.html">Week 10: Python &amp; Pandas</a></li><li><a href="../phase-4/week-11.html">Week 11: Analytics Pandas</a></li><li><a href="../phase-4/week-12.html">Week 12: Capstone</a></li></ul></ul></div>
+  <div class="nav-section"><div class="nav-label">Tools</div><ul class="nav-list"><li><a href="../cert-tracker.html">Cert Tracker</a></li><li><a href="index.html">Resources</a></li></ul></div>
+</aside>
+
+<main class="main">
+<div class="course-header">
+  <div class="crumb"><a href="../index.html">Course Home</a> &rsaquo; <a href="index.html">Resources</a> &rsaquo; Prompt Library</div>
+  <h1>AI Co-Work Prompt Library</h1>
+  <p class="lead">Reusable prompt patterns organized by the five AI co-work skills. Copy. Paste. Adapt. These are the muscle memory you build over 12 weeks.</p>
+</div>
+
+<section>
+  <h2>Your Claude Project System Prompt (start here)</h2>
+  <p>Create a Claude Project called &ldquo;Stephen Data Course&rdquo; and paste this as the system prompt:</p>
+  <pre><code>I am Stephen Branch. I am working through a 12-week applied data
+analytics curriculum. Help me think through problems and drill AI
+co-work skills. When I paste code or data, validate carefully. When
+I am wrong, tell me directly. Assume I have 10+ years of finance and
+treasury domain experience but I am learning SQL, pandas, and viz
+tools for the first time. Do not over-explain finance concepts. Do
+explain technical concepts patiently.</code></pre>
+  <p>Upload the current week's page (Print to PDF) and any active datasets to the Project.</p>
+</section>
+
+<section>
+  <h2>Skill #1 &mdash; Translate Business Problem to Data Question</h2>
+
+  <h3>Critique-my-translation</h3>
+  <pre><code>I am trying to translate a business problem into a data question.
+
+Business problem: [yours]
+My data question: [yours]
+
+Critique on: precision, ambiguity, follow-up questions that would
+strengthen the analysis. Do not rewrite my question. Point at gaps.</code></pre>
+
+  <h3>Engineer stress-test</h3>
+  <pre><code>Here is my data question: [yours]
+Act as a data engineer receiving this as a ticket. What clarifying
+questions would you ask before writing code?</code></pre>
+</section>
+
+<section>
+  <h2>Skill #2 &mdash; Command AI to Execute</h2>
+
+  <h3>SQL &mdash; SDQS loop (Schema, Data question, Query, Validate, Stress-test)</h3>
+  <pre><code>Schema: [paste CREATE TABLEs or equivalent]
+Sample rows: [paste 1 row per table]
+Question: [precise]
+
+Write the SQL in [SQLite / PostgreSQL / BigQuery] syntax.
+Explain each clause. Note edge cases.</code></pre>
+
+  <h3>Pandas &mdash; LDTV loop (Load, Describe, Transform, Validate)</h3>
+  <pre><code>DataFrame shape and dtypes: [df.info() paste]
+First rows: [df.head() paste]
+I want to: [describe transformation in English]
+
+Write the pandas. Explain each step. Note dtype implications.</code></pre>
+
+  <h3>Excel / Sheets formula</h3>
+  <pre><code>Sheet structure: columns A=[], B=[], ... rows 2-N.
+I want a formula in column [X] that [describes logic].
+
+Write the formula. Explain each function. Note what happens on edge
+cases (empty cells, mismatched types).</code></pre>
+</section>
+
+<section>
+  <h2>Skill #3 &mdash; Validate</h2>
+
+  <h3>Cross-check</h3>
+  <pre><code>Here is [query / function / formula] output: [paste]
+
+Two validation questions:
+1. Do the row count / shape / magnitude match my domain expectation?
+2. Walk me through how to cross-check this result with an
+   independent method.</code></pre>
+
+  <h3>Smell-test</h3>
+  <pre><code>The output says [X]. My domain knowledge says I'd expect roughly [Y].
+The gap is [gap size]. Help me figure out whether the output is wrong
+or my expectation is stale. What would you check first?</code></pre>
+</section>
+
+<section>
+  <h2>Skill #4 &mdash; Iterate</h2>
+
+  <h3>Patch, don't rewrite</h3>
+  <pre><code>Your previous answer was 70% right. The issue is [specific problem].
+Keep the correct parts. Fix only [specific issue]. Show me the diff
+vs the previous version.</code></pre>
+
+  <h3>Add a dimension</h3>
+  <pre><code>Extend the previous analysis to also [new dimension]. Do not redo
+the earlier work. Build on it.</code></pre>
+</section>
+
+<section>
+  <h2>Skill #5 &mdash; Present</h2>
+
+  <h3>Ten-second test (for dashboards)</h3>
+  <pre><code>Audience: [CFO / ops lead / non-technical exec]
+Dashboard described: [list of charts + summary text]
+Core question they want answered: [question]
+
+Critique on: 10-second insight, cognitive load, chart choices,
+story arc. Do not soften feedback.</code></pre>
+
+  <h3>Executive summary drafts</h3>
+  <pre><code>Based on the analysis above, draft 3 candidate 40-word executive
+summaries. Lead with headline, include one supporting number, end
+with recommended action.</code></pre>
+</section>
+
+<section>
+  <h2>Meta &mdash; Session Hygiene</h2>
+
+  <h3>Start of session</h3>
+  <pre><code>I am working on [this week's goal]. My current context:
+[paste relevant files / previous work]
+Today's objective: [one sentence]
+Let's plan the next 2 hours.</code></pre>
+
+  <h3>End of session</h3>
+  <pre><code>Summarize what we accomplished in this session. What's open? What
+should I pick up on first thing tomorrow? Flag anything I should
+double-check before committing to portfolio.</code></pre>
+</section>
+
+<div class="site-footer">Built for Stephen Branch by Jon Hayles (2026) &middot; Design inspired by <a href="https://html5up.net/editorial" rel="noopener">HTML5 UP Editorial</a> (CC-BY 3.0)</div>
+</main>
+</div>
+</body>
+</html>
