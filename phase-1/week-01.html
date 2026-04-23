@@ -4,8 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Week 1: Claude as Pair Partner | Claude Co-Work</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/css/main.css">
 </head>
@@ -89,7 +88,7 @@
   <div class="tag-row">
     <span class="tag">Phase 1 &middot; Foundation</span>
     <span class="tag">Skill Focus: Translate Problem &rarr; Data Question</span>
-    <span class="tag">~13 hours</span>
+    <span class="tag">~8 hours</span>
   </div>
   <div class="progress-bar">
     <span class="progress-bar-label">Course Progress</span>
@@ -101,153 +100,174 @@
 <button class="btn btn-secondary print-btn" onclick="window.print()">Print this packet</button>
 
 <section>
-  <p class="lead">Stop thinking of Claude as a search engine. Most people treat Claude like Google with personality &mdash; ask a question, skim the answer, move on. That is lookup. Co-work is different. This week you build the foundational habit every other week depends on.</p>
+  <p class="lead">This week you set up Claude as your workspace and run your first real analyst drill inside it. No notebook app. No external tools. No software installs. You get comfortable commanding Claude, because every week after this one uses it.</p>
 </section>
 
 <section>
   <h2>Learning Goals</h2>
   <div class="goal-list">
     <ul>
-      <li>Build the habit of writing-before-prompting &mdash; you are the author, Claude is the senior reviewer</li>
-      <li>Drill Skill #1: translate a business problem into a precise, SQL-able data question</li>
-      <li>Ship your first public GitHub portfolio entry: &ldquo;My treasury career in 5 analyses&rdquo;</li>
+      <li>Set up a Claude account and your first Project with course-specific instructions</li>
+      <li>Drill Skill #1: translate a treasury business problem into a precise, SQL-able data question &mdash; entirely inside Claude</li>
+      <li>Ship your first public GitHub portfolio entry, drafted in Claude and exported</li>
     </ul>
   </div>
 </section>
 
 <section>
+  <h2>Setup &mdash; Do This Monday</h2>
+  <p>Three accounts, ten minutes. You stay on the free tier this week. You will upgrade to Claude Pro in Week 2 when you start uploading real spreadsheets for analysis.</p>
+
+  <h3>1. Claude account (free tier is fine)</h3>
+  <p>Go to <a href="https://claude.ai" rel="noopener">claude.ai</a>. Sign up with email or Google. Free tier gives you enough daily messages for this week's work. You will hit limits in Week 2 and upgrade then, not now.</p>
+
+  <h3>2. Create a Project for this course</h3>
+  <p>In the Claude sidebar, click <strong>Projects</strong> then <strong>Create Project</strong>. Name it <code>Stephen Data Course &mdash; Week 1</code>. In the instructions box, paste this:</p>
+  <pre><code>I'm Stephen Branch, working through Week 1 of a data analytics course.
+My background is treasury and accounting. Use treasury and finance
+examples when you explain things. I want to understand what every
+line of code or formula does, don't just write it for me. When I ask
+a question, explain the thinking first and then give the answer.
+When I get something wrong, tell me what I'm missing. Don't flatter me.
+
+This week's focus: translating treasury business problems into
+precise, answerable data questions.</code></pre>
+  <p>Click save. Every conversation you start inside this Project inherits these instructions.</p>
+
+  <h3>3. GitHub account (free)</h3>
+  <p>Go to <a href="https://github.com" rel="noopener">github.com</a>, sign up. Create a new public repo called <code>stephen-data-portfolio</code>. Saturday you push your first entry to it.</p>
+</section>
+
+<section>
   <h2>AI Co-Work Pattern &mdash; Skill #1</h2>
   <div class="callout featured">
-    <h3>This is the course's moat &mdash; read carefully</h3>
-    <p>Every treasury problem is secretly a data question wearing a suit. Your boss says &ldquo;AR is climbing, why?&rdquo; That is a business problem. The data question might be: <em>&ldquo;For invoices aged 60+ days in Q1 2026 vs Q1 2025, by customer segment, what is the distribution of days-outstanding and has the mix shifted?&rdquo;</em> You translate. Claude does not know your business. You do.</p>
+    <h3>The habit this course is built around</h3>
+    <p>Every treasury problem is secretly a data question. Your boss says &ldquo;AR is climbing, why?&rdquo; That's a business problem. The data question might be: <em>&ldquo;For invoices aged 60+ days in Q1 2026 vs Q1 2025, by customer segment, what is the distribution of days outstanding and has the mix shifted?&rdquo;</em> You translate. Claude does not know your business. You do.</p>
   </div>
 
-  <h3>The Four-Step Drill</h3>
-  <p>For each of your five treasury questions this week, run this exact sequence:</p>
+  <h3>The Drill &mdash; All Inside Claude</h3>
+  <p>Open a new conversation inside your Week 1 Project. You do this drill five times this week, once per treasury question. Everything happens in chat.</p>
 
-  <h4>Step 1 &mdash; Write it yourself, no AI</h4>
-  <p>In your notebook, write the business problem (1-2 sentences) and your first-cut data question (1 sentence, as precise as you can make it). Do not open Claude yet. This is the muscle.</p>
+  <h4>Step 1 &mdash; Write your first attempt, in chat</h4>
+  <p>Type into the Claude chat box:</p>
+  <pre><code>Business problem: [1-2 sentences in plain English, from your
+treasury experience]
 
-  <h4>Step 2 &mdash; Paste to Claude, ask for critique</h4>
-  <p>Copy this prompt template (you will reuse it all course):</p>
-  <pre><code>I am trying to translate a treasury business problem into a precise
-data question. Here is my attempt.
+My first attempt at a data question:
+[one sentence, as precise as you can make it]
 
-Business problem: [yours]
-Data question: [yours]
+Do not critique yet. Just acknowledge you have it.</code></pre>
+  <p>Send. Claude will acknowledge. You have now committed to a version. That's on the record.</p>
 
-Critique the data question on three dimensions:
+  <h4>Step 2 &mdash; Ask Claude to critique</h4>
+  <p>Next message:</p>
+  <pre><code>Now critique the data question on three dimensions:
 1. Is it precise enough that someone could write SQL against it?
 2. What ambiguity remains (dates, grain, filters, definitions)?
-3. What are 2-3 follow-up data questions that would make this
-   analysis more useful?
+3. What are 2-3 follow-up questions that would make the analysis
+   more useful?
 
 Do not rewrite my question for me. Point at the gaps.
 I will rewrite.</code></pre>
+  <p>Read the critique. Take notes in your head, not on paper. The chat IS your notes.</p>
 
-  <h4>Step 3 &mdash; Rewrite it yourself, alone again</h4>
-  <p>Based on Claude's critique, rewrite <strong>your</strong> data question. Do not paste Claude's version. Paste your rewrite back for the final check.</p>
+  <h4>Step 3 &mdash; Rewrite, still in chat</h4>
+  <p>Type your v2 question into the same chat. Don't paste Claude's version. Rewrite in your own words based on the critique.</p>
 
-  <h4>Step 4 &mdash; Validate with engineer-stress-test</h4>
+  <h4>Step 4 &mdash; Stress test</h4>
   <pre><code>Here is my rewritten data question: [yours v2]
 
 Act as a data engineer who just received this as a ticket.
 What clarifying questions would you ask before writing SQL?</code></pre>
-  <p>If engineer-Claude has zero clarifying questions, your question is tight. Three or more, your question needs work.</p>
+  <p>Engineer-Claude has zero clarifying questions: your question is tight. Three or more: rewrite again. Loop until it's tight.</p>
 
   <div class="callout warn">
     <h3>Trap to avoid</h3>
-    <p>&ldquo;Claude, what data questions should I write for treasury?&rdquo; &mdash; that is lookup, not co-work. You would get generic answers. Lived domain experience generates better questions than Claude's training data can.</p>
-  </div>
-</section>
-
-<section>
-  <h2>Resources (Verified Live 2026-04-21)</h2>
-  <table>
-    <tr><th>Resource</th><th>Notes</th></tr>
-    <tr>
-      <td><a href="https://claude.ai" rel="noopener">claude.ai</a></td>
-      <td>Sign up for Pro ($20/mo). Enable Projects. Create one called &ldquo;Stephen Data Course&rdquo;.</td>
-    </tr>
-    <tr>
-      <td><a href="https://github.com/microsoft/Data-Science-For-Beginners" rel="noopener">Microsoft Data-Science-For-Beginners</a></td>
-      <td>Lesson 1 only this week. MIT licensed. 10-week structure, 34.9k stars.</td>
-    </tr>
-    <tr>
-      <td><a href="https://www.youtube.com/c/joshstarmer" rel="noopener">StatQuest (Josh Starmer)</a></td>
-      <td>Start the &ldquo;Statistics Fundamentals&rdquo; playlist. One video per day.</td>
-    </tr>
-    <tr>
-      <td><a href="https://github.com/" rel="noopener">GitHub</a></td>
-      <td>Create a free account if you don't have one. You will commit your first entry Saturday.</td>
-    </tr>
-  </table>
-  <p class="lead" style="font-size: 0.9em; margin-top: -0.5em;">Links verified live 2026-04-21 via <code>gh api</code>, WebFetch, and curl HEAD checks.</p>
-</section>
-
-<section>
-  <h2>Companion Video</h2>
-  <div class="callout">
-    <h3>Alex the Analyst Bootcamp</h3>
-    <p>Watch <a href="https://www.youtube.com/@AlexTheAnalyst" rel="noopener">Alex the Analyst's &ldquo;What Does a Data Analyst Actually Do?&rdquo;</a> on YouTube (free). Then preview his full Data Analyst Bootcamp playlist &mdash; we map his videos to our weeks on the <a href="../resources/alex-companion.html">Alex Companion</a> page.</p>
-    <p><strong>Note:</strong> Alex uses SSMS and Anaconda. You will translate to DB Fiddle and Colab. Same skills, lighter tooling.</p>
+    <p>&ldquo;Claude, what data questions should I write for treasury?&rdquo; &mdash; that's lookup, not co-work. You would get generic answers. Your lived experience generates better questions than Claude's training data can. You drive. Claude reviews.</p>
   </div>
 </section>
 
 <section>
   <h2>Mini-Project &mdash; Five Treasury Questions</h2>
-  <p>Write a ~1,500-word document titled <strong>&ldquo;5 data questions I could have answered in my last treasury job.&rdquo;</strong></p>
-  <p>For each of the five questions, include:</p>
-  <ul>
-    <li><strong>Business problem</strong> &mdash; 2 sentences, plain English</li>
-    <li><strong>Data question</strong> &mdash; precise, SQL-able even if you can't write SQL yet</li>
-    <li><strong>Data required</strong> &mdash; tables, fields, grain (daily? per-invoice?)</li>
-    <li><strong>Decision informed</strong> &mdash; what would have changed if you had the answer?</li>
-  </ul>
-  <p>This is a stealth exercise. You are drilling Skill #1 on familiar territory. By end of week you should be able to translate any finance problem into a precise data question.</p>
+  <p>The deliverable: a document titled <strong>&ldquo;5 data questions I could have answered in my last treasury job.&rdquo;</strong></p>
+
+  <h3>How to build it inside Claude</h3>
+  <p>After you've run the drill five times (five separate questions), start a new conversation in the same Project and ask Claude:</p>
+  <pre><code>I have run the four-step drill five times. Each time I landed on
+a solid v2 data question. Help me compile a 1,200-word document
+with five numbered sections. For each question include:
+
+- Business problem (2 sentences, plain English)
+- Data question (precise, SQL-able even if I cannot write SQL yet)
+- Data required (tables, fields, grain)
+- Decision informed (what would have changed with the answer?)
+
+Format as markdown. Start with a 3-sentence intro about who I am
+and why I am doing this course. End with a 1-paragraph reflection
+on what I learned about my own domain by writing this.
+
+Here are my five questions with drill notes: [paste your drill
+history from the previous conversations here]</code></pre>
+  <p>Claude returns the draft as an artifact. You read it. You rewrite the intro and the reflection in your own voice (this is the one piece that must sound like Stephen, not a model). Export the artifact as a <code>.md</code> file.</p>
+
+  <h3>Commit Saturday</h3>
+  <p>Push to your public GitHub repo: <code>stephen-data-portfolio/week_01_five_treasury_questions.md</code>. First commit. It will look spare by design. Later weeks stack on top of it.</p>
 </section>
 
 <section>
-  <h2>Portfolio Entry Template</h2>
-  <div class="callout">
-    <h3>Commit Saturday: <code>portfolio/week_01_five_treasury_questions.md</code></h3>
-    <p>File should contain:</p>
-    <ol>
-      <li>A short intro (3&ndash;4 sentences) &mdash; who you are, why you're doing this course, what this document demonstrates</li>
-      <li>Five numbered sections, one per question, with the four fields above</li>
-      <li>A closing paragraph: what you learned about your own domain while writing this</li>
-    </ol>
-    <p>Push to your public GitHub repo named <code>stephen-data-portfolio</code>. This is the first public commit. It will look spare this week by design &mdash; later weeks build on top of it.</p>
-  </div>
+  <h2>Resources</h2>
+  <table>
+    <tr><th>Resource</th><th>What it is</th><th>Required?</th></tr>
+    <tr>
+      <td><a href="https://claude.ai" rel="noopener">claude.ai</a></td>
+      <td>Your workspace. Free tier for Week 1.</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com" rel="noopener">GitHub</a></td>
+      <td>Where your portfolio lives. Public repo.</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td><a href="../resources/prompt-library.html">Prompt Library</a></td>
+      <td>Reusable prompt patterns for all 12 weeks.</td>
+      <td>Reference</td>
+    </tr>
+    <tr>
+      <td><a href="../resources/alex-companion.html">Alex the Analyst Companion</a></td>
+      <td>Optional supplemental videos. Watch his &ldquo;What does a data analyst actually do?&rdquo; intro if you want background.</td>
+      <td>Optional</td>
+    </tr>
+  </table>
 </section>
 
 <section>
   <h2>Time Budget</h2>
   <table>
     <tr><th>Block</th><th>Hours</th><th>Notes</th></tr>
-    <tr><td>Read course orientation (Course Home, this page)</td><td>2</td><td>Monday</td></tr>
-    <tr><td>Microsoft DS-for-Beginners Lesson 1 + StatQuest daily video</td><td>3</td><td>Tue&ndash;Wed</td></tr>
-    <tr><td>Draft and iterate the 5 questions document with Claude</td><td>5</td><td>Thu&ndash;Fri (cowork)</td></tr>
-    <tr><td>Portfolio entry + GitHub setup + first commit</td><td>2</td><td>Saturday</td></tr>
-    <tr><td>Sunday check-in with Jon</td><td>1</td><td>Voice or video, 60 min</td></tr>
-    <tr><td><strong>Total</strong></td><td><strong>13</strong></td><td>Light by design &mdash; build the habit infrastructure</td></tr>
+    <tr><td>Setup (Claude, Project, GitHub)</td><td>1</td><td>Monday, one sitting</td></tr>
+    <tr><td>Read course home and How This Works</td><td>1</td><td>Monday</td></tr>
+    <tr><td>Run the drill 5 times (1 per day, Tue-Sat)</td><td>3</td><td>~30-40 min per question</td></tr>
+    <tr><td>Compile document in Claude, rewrite intro and reflection</td><td>1.5</td><td>Saturday</td></tr>
+    <tr><td>Push to GitHub</td><td>0.5</td><td>Saturday</td></tr>
+    <tr><td>Sunday cowork hour with Jon</td><td>1</td><td>Video call, walk through what you built</td></tr>
+    <tr><td><strong>Total</strong></td><td><strong>~8</strong></td><td>Light by design. The point is the habit, not volume.</td></tr>
   </table>
 </section>
 
 <section>
   <h2>How This Builds Forward</h2>
-  <p>Every subsequent week you will translate new problems into data questions. This week you drill on home turf (treasury) so the translation mechanics are clear. Weeks 4+ apply it to unfamiliar domains (retail, music sales, public debt) and the skill has to hold up there too. If you can translate in Week 1, you can translate anywhere by Week 12.</p>
+  <p>Every subsequent week you translate new problems into data questions. This week you drilled on home turf (treasury) so the mechanics are clear. Weeks 4+ apply the same skill to unfamiliar domains (retail sales, public debt, SaaS cohort data). If you can translate in Week 1, you can translate anywhere by Week 12.</p>
 </section>
 
 <section>
   <h2>Before You Start &mdash; Setup Checklist</h2>
   <div class="goal-list">
     <ul>
-      <li>Claude Pro subscription active ($20/mo &mdash; Jon reimburses first 3 months)</li>
-      <li>GitHub account created (free tier is fine)</li>
-      <li>Claude Project &ldquo;Stephen Data Course&rdquo; created with system prompt (see <a href="../resources/prompt-library.html">prompt library</a>)</li>
-      <li>Notebook or Obsidian vault set up for logging what you learn</li>
-      <li>LinkedIn headline updated to &ldquo;Data Analyst in Training&rdquo; (stripped before Week 9)</li>
+      <li>Claude free-tier account created at claude.ai</li>
+      <li>Project named &ldquo;Stephen Data Course &mdash; Week 1&rdquo; with instructions pasted</li>
+      <li>Public GitHub repo <code>stephen-data-portfolio</code> created</li>
+      <li>Course Home and <a href="../how-it-works.html">How This Works</a> pages read</li>
     </ul>
   </div>
 </section>
