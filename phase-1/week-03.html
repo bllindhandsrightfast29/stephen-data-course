@@ -3,88 +3,376 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Week 3: Financial Analysis Formalized | Claude Co-Work</title>
+<title>Week 3: Financial Analysis | Claude Co-Work</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/css/main.css">
 </head>
 <body>
 <div class="layout">
+
 <aside class="sidebar">
   <a href="../index.html" class="site-title">Claude Co-Work</a>
   <div class="site-tagline">Applied Data Analytics &middot; 12 Weeks</div>
-  <div class="nav-section"><div class="nav-label">Course</div><ul class="nav-list"><li><a href="../index.html">Course Home</a></li><li><a href="../how-it-works.html">How This Works</a></li></ul></div>
-  <div class="nav-section"><div class="nav-label">Phase 1 &middot; Foundation</div><ul class="nav-list"><li><a href="index.html">Phase Overview</a></li><ul class="nav-list nav-sub"><li><a href="week-01.html">Week 1: Claude as Pair Partner</a></li><li><a href="week-02.html">Week 2: Advanced Sheets/Excel</a></li><li><a href="week-03.html" class="current">Week 3: Financial Analysis</a></li></ul></ul></div>
-  <div class="nav-section"><div class="nav-label">Phase 2 &middot; SQL</div><ul class="nav-list"><li><a href="../phase-2/index.html">Phase Overview</a></li><ul class="nav-list nav-sub"><li><a href="../phase-2/week-04.html" class="locked">Week 4: SQL Basics</a></li><li><a href="../phase-2/week-05.html" class="locked">Week 5: Joins &amp; Aggregates</a></li><li><a href="../phase-2/week-06.html" class="locked">Week 6: Analyst-Grade SQL</a></li></ul></ul></div>
-  <div class="nav-section"><div class="nav-label">Phase 3 &middot; Visualization</div><ul class="nav-list"><li><a href="../phase-3/index.html">Phase Overview</a></li><ul class="nav-list nav-sub"><li><a href="../phase-3/week-07.html" class="locked">Week 7: Dashboard Fundamentals</a></li><li><a href="../phase-3/week-08.html" class="locked">Week 8: Business Dashboards</a></li><li><a href="../phase-3/week-09.html" class="locked">Week 9: Portfolio Assembly</a></li></ul></ul></div>
-  <div class="nav-section"><div class="nav-label">Phase 4 &middot; Python &amp; Capstone</div><ul class="nav-list"><li><a href="../phase-4/index.html">Phase Overview</a></li><ul class="nav-list nav-sub"><li><a href="../phase-4/week-10.html" class="locked">Week 10: Python &amp; Pandas</a></li><li><a href="../phase-4/week-11.html" class="locked">Week 11: Analytics Pandas</a></li><li><a href="../phase-4/week-12.html" class="locked">Week 12: Capstone</a></li></ul></ul></div>
-  <div class="nav-section"><div class="nav-label">Tools</div><ul class="nav-list"><li><a href="../cert-tracker.html">Cert Tracker</a></li><li><a href="../resources/index.html">Resources</a></li></ul></div>
+
+  <div class="nav-section">
+    <div class="nav-label">Course</div>
+    <ul class="nav-list">
+      <li><a href="../index.html">Course Home</a></li>
+      <li><a href="../how-it-works.html">How This Works</a></li>
+    </ul>
+  </div>
+
+  <div class="nav-section">
+    <div class="nav-label">Phase 1 &middot; Foundation</div>
+    <ul class="nav-list">
+      <li><a href="index.html">Phase Overview</a></li>
+      <ul class="nav-list nav-sub">
+        <li><a href="week-01.html">Week 1: Claude as Pair Partner</a></li>
+        <li><a href="week-02.html">Week 2: Advanced Sheets/Excel</a></li>
+        <li><a href="week-03.html" class="current">Week 3: Financial Analysis</a></li>
+      </ul>
+    </ul>
+  </div>
+
+  <div class="nav-section">
+    <div class="nav-label">Phase 2 &middot; SQL</div>
+    <ul class="nav-list">
+      <li><a href="../phase-2/index.html">Phase Overview</a></li>
+      <ul class="nav-list nav-sub">
+        <li><a href="../phase-2/week-04.html" class="locked">Week 4: SQL Basics</a></li>
+        <li><a href="../phase-2/week-05.html" class="locked">Week 5: Joins &amp; Aggregates</a></li>
+        <li><a href="../phase-2/week-06.html" class="locked">Week 6: Analyst-Grade SQL</a></li>
+      </ul>
+    </ul>
+  </div>
+
+  <div class="nav-section">
+    <div class="nav-label">Phase 3 &middot; Visualization</div>
+    <ul class="nav-list">
+      <li><a href="../phase-3/index.html">Phase Overview</a></li>
+      <ul class="nav-list nav-sub">
+        <li><a href="../phase-3/week-07.html" class="locked">Week 7: Dashboard Fundamentals</a></li>
+        <li><a href="../phase-3/week-08.html" class="locked">Week 8: Business Dashboards</a></li>
+        <li><a href="../phase-3/week-09.html" class="locked">Week 9: Portfolio Assembly</a></li>
+      </ul>
+    </ul>
+  </div>
+
+  <div class="nav-section">
+    <div class="nav-label">Phase 4 &middot; Python &amp; Capstone</div>
+    <ul class="nav-list">
+      <li><a href="../phase-4/index.html">Phase Overview</a></li>
+      <ul class="nav-list nav-sub">
+        <li><a href="../phase-4/week-10.html" class="locked">Week 10: Python &amp; Pandas</a></li>
+        <li><a href="../phase-4/week-11.html" class="locked">Week 11: Analytics Pandas</a></li>
+        <li><a href="../phase-4/week-12.html" class="locked">Week 12: Capstone</a></li>
+      </ul>
+    </ul>
+  </div>
+
+  <div class="nav-section">
+    <div class="nav-label">Tools</div>
+    <ul class="nav-list">
+      <li><a href="../cert-tracker.html">Cert Tracker</a></li>
+      <li><a href="../resources/index.html">Resources</a></li>
+    </ul>
+  </div>
 </aside>
 
 <main class="main">
+
 <div class="course-header">
   <div class="crumb"><a href="../index.html">Course Home</a> &rsaquo; <a href="index.html">Phase 1</a> &rsaquo; Week 3</div>
-  <h1>Week 3 &mdash; Financial Analysis Formalized</h1>
-  <div class="tag-row"><span class="tag">Phase 1 &middot; Foundation</span><span class="tag">Skill Focus: Validate AI Output</span><span class="tag">~15 hours</span></div>
-  <div class="progress-bar"><span class="progress-bar-label">Course Progress</span><div class="progress-bar-track"><div class="progress-bar-fill" style="width: 25%"></div></div><span class="progress-bar-label">Week 3 of 12</span></div>
+  <h1>Week 3 &mdash; Financial Analysis</h1>
+  <div class="tag-row">
+    <span class="tag">Phase 1 &middot; Foundation</span>
+    <span class="tag">Skill Focus: Validate Output Against Domain Knowledge</span>
+    <span class="tag">~12 hours</span>
+  </div>
+  <div class="progress-bar">
+    <span class="progress-bar-label">Course Progress</span>
+    <div class="progress-bar-track"><div class="progress-bar-fill" style="width: 25%"></div></div>
+    <span class="progress-bar-label">Week 3 of 12</span>
+  </div>
 </div>
 
 <button class="btn btn-secondary print-btn" onclick="window.print()">Print this packet</button>
 
 <section>
-  <p class="lead">Standard financial-analysis vocabulary: ratio analysis, DuPont, common-size statements, variance, trend decomposition. Builds the fluency to use these frameworks on a resume or in interviews.</p>
+  <p class="lead">You already know this content. Time value of money, IRR, NPV, working capital, 10-K analysis. The point this week is not learning finance. The point is using Claude to speed up work you already understand, and validating Claude's output with your own instinct. If a number comes back wrong, you have to know it looks wrong.</p>
 </section>
 
 <section>
   <h2>Learning Goals</h2>
   <div class="goal-list">
     <ul>
-      <li>Fluency with 8+ core financial ratios (liquidity, leverage, efficiency, profitability)</li>
-      <li>Drill Skill #3: validate Claude's output against domain knowledge</li>
-      <li>Ship a three-company comparative analysis using real 10-Ks</li>
+      <li>Rebuild core financial analysis models (DCF, working capital, ratio analysis) in Claude-pair-work style</li>
+      <li>Drill Skill #3: validate AI output against domain knowledge, catch wrong answers fast</li>
+      <li>Pull real 10-K data from SEC EDGAR and run analysis on an actual public company</li>
+      <li>Ship a one-company financial analysis memo as this week's portfolio entry</li>
     </ul>
   </div>
 </section>
 
-<div class="locked-preview">
-  <h3>Content Releases After Week 2</h3>
-  <p>Full drill content, mini-project details, and portfolio template will unlock once Week 2's workbook is committed.</p>
-</div>
-
 <section>
-  <h2>AI Co-Work Pattern (Preview)</h2>
-  <p>Skill #3: Claude will tell you things about financial statements. Some will be right. Some will be oversimplified or wrong. Your job is to catch the bad ones. Example:</p>
-  <pre><code>Claude, explain the DuPont identity and give me a worked
-example on Apple's FY2024 financials.</code></pre>
-  <p>Claude returns an explanation with numbers. You open Apple's actual 10-K on SEC EDGAR and check the math. Report back: &ldquo;You said ROE = 170%. The 10-K gives 157%. Show me the discrepancy.&rdquo; Iterate.</p>
+  <h2>Why This Week Matters</h2>
+  <p>Claude will confidently return financial calculations that are wrong. Wrong discount rate. Wrong working capital definition. Wrong treatment of non-cash items. The math is correct. The input assumptions are subtly off.</p>
+  <p>You catch those errors because you have seen a real 10-K before. You know what the working capital number should roughly be for a large retailer. You know that if the DCF says the company is worth negative money, something is broken.</p>
+  <p>Every subsequent week uses this skill. SQL results look wrong. Dashboards look wrong. Python aggregations look wrong. This week drills the muscle on familiar ground.</p>
 </section>
 
 <section>
-  <h2>Resources (Preview)</h2>
+  <h2>AI Co-Work Pattern &mdash; Skill #3: Validate Against Domain Knowledge</h2>
+  <div class="callout featured">
+    <h3>The drill</h3>
+    <p>Claude gives you a number. Before you use it, you run three checks:</p>
+    <ol>
+      <li><strong>Order-of-magnitude check</strong> &mdash; is the number roughly what you'd expect? (millions vs billions, percent vs basis points, annual vs quarterly)</li>
+      <li><strong>Sign check</strong> &mdash; if it should be positive, is it? If working capital should be positive for a healthy company, is Claude's number positive?</li>
+      <li><strong>Sensibility check</strong> &mdash; given what you know about the company or problem, does this number make sense in context?</li>
+    </ol>
+    <p>If any check fails, push back on Claude. Don't just re-prompt. Tell it specifically what you think is wrong and why.</p>
+  </div>
+
+  <h3>Example of the drill in action</h3>
+  <pre><code>I asked Claude:
+"Using Apple's 2023 10-K, calculate free cash flow."
+
+Claude returned:
+"$99.6B"
+
+My order-of-magnitude check: Apple's revenue was ~$383B in 2023.
+A 25% FCF-to-revenue ratio is plausible for a mature tech company.
+Passes.
+
+My sign check: Apple is profitable, FCF should be positive. Passes.
+
+My sensibility check: I know Apple reported FCF of ~$99B in their
+earnings calls. This matches.
+
+Verdict: trust the number.
+
+---
+
+Different example. I asked Claude:
+"Using Tesla's 2023 10-K, calculate days sales outstanding (DSO)."
+
+Claude returned:
+"147 days"
+
+My order-of-magnitude check: 147 days of AR for a mostly direct-to-
+consumer auto company? That would mean customers take 5 months to
+pay. Tesla's payments mostly happen at delivery.
+FAILS.
+
+I push back:
+"A 147-day DSO seems way too high for Tesla's mostly direct-to-
+consumer model. Can you show me the numerator and denominator you
+used? I suspect you pulled a total receivables line that includes
+non-trade items."
+
+Claude re-runs with clarified input. Returns 17 days. That passes
+all three checks.</code></pre>
+  <p>The work is in the skepticism. Claude will not volunteer that it's wrong. You have to force the re-check.</p>
+</section>
+
+<section>
+  <h2>The Five Drills</h2>
+  <p>Five financial-analysis topics this week. Each one uses Claude to do the calculation, then you run the three-check drill on the result.</p>
+
+  <h4>Drill 1 &mdash; Time Value of Money (PV, FV, IRR, NPV)</h4>
+  <pre><code>I need to evaluate a potential investment. I'll invest $1M today,
+receive $250K at the end of each year for 5 years. My discount
+rate is 8%.
+
+Calculate:
+1. NPV
+2. IRR
+3. Payback period
+4. Discounted payback period
+
+Show me the formulas you're using AND the Excel formula syntax
+I would use to rebuild this myself. Then I will validate against
+a hand calculation.</code></pre>
+  <p>Run the three-check drill on each number. Is the sign right? Is the magnitude plausible? Does NPV-positive tie to IRR &gt; discount rate?</p>
+
+  <h4>Drill 2 &mdash; Working Capital Analysis</h4>
+  <pre><code>I uploaded [Apple's / Walmart's / your pick] most recent 10-K.
+Walk me through calculating:
+
+1. Net working capital (current assets - current liabilities)
+2. Days sales outstanding (DSO)
+3. Days inventory outstanding (DIO)
+4. Days payable outstanding (DPO)
+5. Cash conversion cycle (CCC)
+
+For each one, show me the line items you're pulling from the 10-K
+so I can verify the inputs. Give the Excel formula too.</code></pre>
+
+  <h4>Drill 3 &mdash; Ratio Analysis</h4>
+  <pre><code>Using the same 10-K, calculate these ratios for the most recent
+fiscal year:
+
+Profitability: gross margin, operating margin, net margin, ROE, ROA
+Liquidity: current ratio, quick ratio, cash ratio
+Leverage: debt-to-equity, interest coverage, debt-to-EBITDA
+Efficiency: asset turnover, inventory turnover
+
+For each ratio, tell me what a "good" value looks like in this
+company's industry, and flag any ratio that seems out of line.</code></pre>
+
+  <h4>Drill 4 &mdash; Discounted Cash Flow (Simple)</h4>
+  <pre><code>Build a simple 5-year DCF for [chosen company] using these inputs:
+
+- Revenue growth: take the last 3 years' average
+- Operating margin: take the last year's actual
+- Tax rate: 25%
+- Reinvestment rate: 20% of EBIT
+- Terminal growth rate: 2.5%
+- Discount rate (WACC): 8.5%
+
+Show me each year's projected free cash flow, the terminal value,
+and the present value. End with an implied share price using the
+current share count from the 10-K.
+
+Then: tell me which assumption is most sensitive. If I change it
+by 1%, how much does the share price move?</code></pre>
+
+  <h4>Drill 5 &mdash; The Validation Exercise</h4>
+  <p>This one is different. Claude intentionally gives you subtle wrong answers. You catch them.</p>
+  <pre><code>I want to practice catching errors. Give me 5 financial analysis
+outputs (numbers with brief context). 3 of them are plausibly
+correct. 2 are subtly wrong (wrong sign, wrong units, wrong
+magnitude, wrong definition). Don't tell me which is which.
+
+For each one I'll write my check and verdict. Then tell me whether
+I caught the errors.</code></pre>
+  <p>Do this drill twice. The first time you might miss one. The second time you will be sharper. That's the point.</p>
+</section>
+
+<section>
+  <h2>Real Data This Week &mdash; SEC EDGAR</h2>
+  <div class="callout">
+    <h3>Pull a real 10-K</h3>
+    <p>Go to <a href="https://www.sec.gov/edgar/searchedgar/companysearch" rel="noopener">SEC EDGAR Company Search</a>. Look up a company you're personally curious about. Or use one of these recommended starters:</p>
+    <ul>
+      <li><strong>Apple (AAPL)</strong> &mdash; clean 10-K, tech giant, FCF-rich</li>
+      <li><strong>Walmart (WMT)</strong> &mdash; retail, working capital story is interesting</li>
+      <li><strong>Costco (COST)</strong> &mdash; membership model, negative working capital cycle</li>
+      <li><strong>Starbucks (SBUX)</strong> &mdash; mature growth, debt on balance sheet</li>
+    </ul>
+    <p>Download the most recent 10-K as PDF. Upload to your Week 3 Claude Project. Claude can read 10-K PDFs and pull line items. You validate what it pulls against the actual filing (it's right there in the PDF).</p>
+  </div>
+</section>
+
+<section>
+  <h2>Mini-Project &mdash; One-Company Financial Memo</h2>
+  <p>Deliverable: a ~1,500-word financial analysis memo on one public company, in the voice of an analyst briefing a portfolio manager.</p>
+
+  <h3>Structure</h3>
+  <ol>
+    <li><strong>Company snapshot</strong> (100 words) &mdash; what they do, market cap, sector</li>
+    <li><strong>Financial highlights</strong> (300 words + table) &mdash; revenue, EBITDA, FCF, debt, the ratios you calculated</li>
+    <li><strong>Working capital and cash conversion analysis</strong> (300 words) &mdash; what does the CCC tell you about how they run the business?</li>
+    <li><strong>Simple DCF</strong> (300 words + output table) &mdash; your 5-year DCF, assumptions called out, implied share price vs actual share price</li>
+    <li><strong>Three things you'd want to ask management</strong> (200 words) &mdash; the sensitivity-analysis results point at questions. Write them.</li>
+    <li><strong>Bottom line</strong> (200 words) &mdash; would you buy / hold / sell and why? Your actual opinion, not a corporate hedge.</li>
+  </ol>
+
+  <h3>How to build it with Claude</h3>
+  <p>Start a new conversation in your Week 3 Project called &ldquo;Memo Build.&rdquo; Upload the 10-K. Ask Claude to draft each section in turn. You rewrite each section in your own voice, correcting any analytic errors you catch.</p>
+  <p>The intro and the bottom-line sections in particular should sound like you, not like a model. You ran the analysis. You have an opinion. Write it.</p>
+
+  <h3>Commit Saturday</h3>
+  <p>Push to <code>stephen-data-portfolio/week_03_[ticker]_financial_memo/</code>. Include:</p>
   <ul>
-    <li><a href="https://corporatefinanceinstitute.com/course-catalog/?course_category=free" rel="noopener">CFI free tier</a></li>
-    <li><a href="https://www.sec.gov/edgar/searchedgar/companysearch" rel="noopener">SEC EDGAR</a></li>
-    <li>Aswath Damodaran free YouTube lectures (NYU Stern)</li>
-    <li>Financial Times free-tier articles for current-events ratio analysis</li>
+    <li>The memo as markdown or PDF</li>
+    <li>A short README explaining what you analyzed and which numbers you used</li>
+    <li>Your calculation workbook (.xlsx or Google Sheets link)</li>
   </ul>
 </section>
 
 <section>
-  <h2>Mini-Project (Preview)</h2>
-  <p>Pick three public companies (one strong, one mediocre, one struggling). Pull three years of 10-Ks. For each: eight core ratios, DuPont decomposition, common-size income statement, variance analysis, plus a 500-word &ldquo;treasury reviewer's note&rdquo; for the CFO. This is the first portfolio entry that reads like analyst-grade work.</p>
+  <h2>Resources</h2>
+  <table>
+    <tr><th>Resource</th><th>What it is</th><th>Required?</th></tr>
+    <tr>
+      <td><a href="https://claude.ai" rel="noopener">Claude Pro</a></td>
+      <td>Your workspace. Need Analysis for PDF + spreadsheet work.</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.sec.gov/edgar/searchedgar/companysearch" rel="noopener">SEC EDGAR</a></td>
+      <td>Free public-company filings. Search by ticker, download 10-K.</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>Google Sheets or Excel</td>
+      <td>Rebuild Claude's formulas yourself to validate.</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td><a href="https://fred.stlouisfed.org" rel="noopener">FRED</a></td>
+      <td>Risk-free rate, market risk premium context.</td>
+      <td>Optional</td>
+    </tr>
+    <tr>
+      <td><a href="https://pages.stern.nyu.edu/~adamodar/" rel="noopener">Damodaran's data library (NYU Stern)</a></td>
+      <td>Industry betas, country risk premiums. Used by professional analysts.</td>
+      <td>Optional</td>
+    </tr>
+  </table>
 </section>
 
 <section>
-  <h2>Cert Progress</h2>
-  <p>CFI Excel Crash Course continuation. First optional cert locked in by end of phase.</p>
+  <h2>Time Budget</h2>
+  <table>
+    <tr><th>Block</th><th>Hours</th><th>Notes</th></tr>
+    <tr><td>Pick company, download 10-K, upload to Claude Project</td><td>0.5</td><td>Monday</td></tr>
+    <tr><td>Five drills (time value, working capital, ratios, DCF, validation)</td><td>5</td><td>Tue-Sat, 1 per day</td></tr>
+    <tr><td>Build the financial memo in Claude, rewrite in your voice</td><td>4</td><td>Fri-Sat</td></tr>
+    <tr><td>Commit to GitHub, update portfolio README</td><td>0.5</td><td>Saturday</td></tr>
+    <tr><td>Finish CFI Excel Crash Course cert if not done in Week 2</td><td>1</td><td>Rolling</td></tr>
+    <tr><td>Sunday cowork hour with Jon</td><td>1</td><td>Walk through the memo, plan Week 4 (SQL starts)</td></tr>
+    <tr><td><strong>Total</strong></td><td><strong>~12</strong></td><td></td></tr>
+  </table>
+</section>
+
+<section>
+  <h2>How This Builds Forward</h2>
+  <p>Week 4 switches tools. You drop spreadsheets and pick up SQL. Same analytic thinking, different syntax. The validation habit you built this week carries directly over: Claude will write SQL that returns wrong numbers, you have to spot it before your boss does.</p>
+  <p>Also: Phase 1 is now complete. You've proven you can learn a new tool with Claude (Excel), apply domain judgment to catch errors (financial analysis), and ship a portfolio piece every week. Phase 2 trusts you to move faster.</p>
+</section>
+
+<section>
+  <h2>Before You Start &mdash; Setup Checklist</h2>
+  <div class="goal-list">
+    <ul>
+      <li>New Claude Project created: &ldquo;Stephen Data Course &mdash; Week 3&rdquo;</li>
+      <li>Project instructions updated (&ldquo;completed Weeks 1-2, now doing financial analysis on real 10-K data&rdquo;)</li>
+      <li>Target company picked, 10-K downloaded, uploaded to the Project</li>
+      <li>Calculation workbook from Week 2 still accessible (you'll reuse formula patterns)</li>
+      <li>CFI Excel Crash Course cert completed (or scheduled to finish this week)</li>
+    </ul>
+  </div>
 </section>
 
 <div class="page-nav">
-  <a href="week-02.html"><span class="label">&larr; Previous</span><span class="title">Week 2: Advanced Sheets/Excel</span></a>
-  <a href="../phase-2/week-04.html" class="next"><span class="label">Next &rarr;</span><span class="title">Week 4: SQL Basics</span></a>
+  <a href="week-02.html">
+    <span class="label">&larr; Previous</span>
+    <span class="title">Week 2: Advanced Sheets/Excel</span>
+  </a>
+  <a href="../phase-2/week-04.html" class="next">
+    <span class="label">Next &rarr;</span>
+    <span class="title">Week 4: SQL Basics</span>
+  </a>
 </div>
 
-<div class="site-footer">Built for Stephen Branch by Jon Hayles (2026) &middot; Design inspired by <a href="https://html5up.net/editorial" rel="noopener">HTML5 UP Editorial</a> (CC-BY 3.0)</div>
+<div class="site-footer">
+  Built for Stephen Branch by Jon Hayles (2026) &middot; Design inspired by
+  <a href="https://html5up.net/editorial" rel="noopener">HTML5 UP Editorial</a> (CC-BY 3.0)</div>
+
 </main>
 </div>
 </body>
