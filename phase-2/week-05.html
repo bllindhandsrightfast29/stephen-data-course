@@ -3,80 +3,355 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Week 5: Joins &amp; Aggregations | Claude Co-Work</title>
+<title>Week 5: Joins &amp; Aggregates | Claude Co-Work</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/css/main.css">
 </head>
 <body>
 <div class="layout">
+
 <aside class="sidebar">
   <a href="../index.html" class="site-title">Claude Co-Work</a>
   <div class="site-tagline">Applied Data Analytics &middot; 12 Weeks</div>
-  <div class="nav-section"><div class="nav-label">Course</div><ul class="nav-list"><li><a href="../index.html">Course Home</a></li><li><a href="../how-it-works.html">How This Works</a></li></ul></div>
-  <div class="nav-section"><div class="nav-label">Phase 1 &middot; Foundation</div><ul class="nav-list"><li><a href="../phase-1/index.html">Phase Overview</a></li><ul class="nav-list nav-sub"><li><a href="../phase-1/week-01.html">Week 1: Claude as Pair Partner</a></li><li><a href="../phase-1/week-02.html">Week 2: Advanced Sheets/Excel</a></li><li><a href="../phase-1/week-03.html">Week 3: Financial Analysis</a></li></ul></ul></div>
-  <div class="nav-section"><div class="nav-label">Phase 2 &middot; SQL</div><ul class="nav-list"><li><a href="index.html">Phase Overview</a></li><ul class="nav-list nav-sub"><li><a href="week-04.html">Week 4: SQL Basics</a></li><li><a href="week-05.html" class="current">Week 5: Joins &amp; Aggregates</a></li><li><a href="week-06.html">Week 6: Analyst-Grade SQL</a></li></ul></ul></div>
-  <div class="nav-section"><div class="nav-label">Phase 3 &middot; Visualization</div><ul class="nav-list"><li><a href="../phase-3/index.html">Phase Overview</a></li><ul class="nav-list nav-sub"><li><a href="../phase-3/week-07.html" class="locked">Week 7: Dashboard Fundamentals</a></li><li><a href="../phase-3/week-08.html" class="locked">Week 8: Business Dashboards</a></li><li><a href="../phase-3/week-09.html" class="locked">Week 9: Portfolio Assembly</a></li></ul></ul></div>
-  <div class="nav-section"><div class="nav-label">Phase 4 &middot; Python &amp; Capstone</div><ul class="nav-list"><li><a href="../phase-4/index.html">Phase Overview</a></li><ul class="nav-list nav-sub"><li><a href="../phase-4/week-10.html" class="locked">Week 10: Python &amp; Pandas</a></li><li><a href="../phase-4/week-11.html" class="locked">Week 11: Analytics Pandas</a></li><li><a href="../phase-4/week-12.html" class="locked">Week 12: Capstone</a></li></ul></ul></div>
-  <div class="nav-section"><div class="nav-label">Tools</div><ul class="nav-list"><li><a href="../cert-tracker.html">Cert Tracker</a></li><li><a href="../resources/index.html">Resources</a></li></ul></div>
+
+  <div class="nav-section">
+    <div class="nav-label">Course</div>
+    <ul class="nav-list">
+      <li><a href="../index.html">Course Home</a></li>
+      <li><a href="../how-it-works.html">How This Works</a></li>
+    </ul>
+  </div>
+
+  <div class="nav-section">
+    <div class="nav-label">Phase 1 &middot; Foundation</div>
+    <ul class="nav-list">
+      <li><a href="../phase-1/index.html">Phase Overview</a></li>
+      <ul class="nav-list nav-sub">
+        <li><a href="../phase-1/week-01.html">Week 1: Claude as Pair Partner</a></li>
+        <li><a href="../phase-1/week-02.html">Week 2: Advanced Sheets/Excel</a></li>
+        <li><a href="../phase-1/week-03.html">Week 3: Financial Analysis</a></li>
+      </ul>
+    </ul>
+  </div>
+
+  <div class="nav-section">
+    <div class="nav-label">Phase 2 &middot; SQL</div>
+    <ul class="nav-list">
+      <li><a href="index.html">Phase Overview</a></li>
+      <ul class="nav-list nav-sub">
+        <li><a href="week-04.html">Week 4: SQL Basics</a></li>
+        <li><a href="week-05.html" class="current">Week 5: Joins &amp; Aggregates</a></li>
+        <li><a href="week-06.html">Week 6: Analyst-Grade SQL</a></li>
+      </ul>
+    </ul>
+  </div>
+
+  <div class="nav-section">
+    <div class="nav-label">Phase 3 &middot; Visualization</div>
+    <ul class="nav-list">
+      <li><a href="../phase-3/index.html">Phase Overview</a></li>
+      <ul class="nav-list nav-sub">
+        <li><a href="../phase-3/week-07.html" class="locked">Week 7: Dashboard Fundamentals</a></li>
+        <li><a href="../phase-3/week-08.html" class="locked">Week 8: Business Dashboards</a></li>
+        <li><a href="../phase-3/week-09.html" class="locked">Week 9: Portfolio Assembly</a></li>
+      </ul>
+    </ul>
+  </div>
+
+  <div class="nav-section">
+    <div class="nav-label">Phase 4 &middot; Python &amp; Capstone</div>
+    <ul class="nav-list">
+      <li><a href="../phase-4/index.html">Phase Overview</a></li>
+      <ul class="nav-list nav-sub">
+        <li><a href="../phase-4/week-10.html" class="locked">Week 10: Python &amp; Pandas</a></li>
+        <li><a href="../phase-4/week-11.html" class="locked">Week 11: Analytics Pandas</a></li>
+        <li><a href="../phase-4/week-12.html" class="locked">Week 12: Capstone</a></li>
+      </ul>
+    </ul>
+  </div>
+
+  <div class="nav-section">
+    <div class="nav-label">Tools</div>
+    <ul class="nav-list">
+      <li><a href="../cert-tracker.html">Cert Tracker</a></li>
+      <li><a href="../resources/index.html">Resources</a></li>
+    </ul>
+  </div>
 </aside>
 
 <main class="main">
+
 <div class="course-header">
   <div class="crumb"><a href="../index.html">Course Home</a> &rsaquo; <a href="index.html">Phase 2</a> &rsaquo; Week 5</div>
-  <h1>Week 5 &mdash; Joins, Aggregations, and the &ldquo;It Looked Right But Wasn't&rdquo; Trap</h1>
-  <div class="tag-row"><span class="tag">Phase 2 &middot; SQL</span><span class="tag">Skill Focus: Validate (silent-duplication edition)</span><span class="tag">~14 hours</span></div>
-  <div class="progress-bar"><span class="progress-bar-label">Course Progress</span><div class="progress-bar-track"><div class="progress-bar-fill" style="width: 41.6%"></div></div><span class="progress-bar-label">Week 5 of 12</span></div>
+  <h1>Week 5 &mdash; Joins &amp; Aggregates</h1>
+  <div class="tag-row">
+    <span class="tag">Phase 2 &middot; SQL</span>
+    <span class="tag">Skill Focus: Validate Output (SQL Edition)</span>
+    <span class="tag">~11 hours</span>
+  </div>
+  <div class="progress-bar">
+    <span class="progress-bar-label">Course Progress</span>
+    <div class="progress-bar-track"><div class="progress-bar-fill" style="width: 41.6%"></div></div>
+    <span class="progress-bar-label">Week 5 of 12</span>
+  </div>
 </div>
 
 <button class="btn btn-secondary print-btn" onclick="window.print()">Print this packet</button>
 
 <section>
-  <p class="lead">INNER, LEFT, RIGHT, FULL OUTER joins &mdash; when each is right. Multi-table aggregations. The classic &ldquo;duplicated rows from a one-to-many&rdquo; bug and how to catch it every time.</p>
+  <p class="lead">Real SQL questions pull from two or more tables. This week you learn the joins: INNER, LEFT, RIGHT, FULL OUTER. Plus subqueries and CTEs. And you drill Skill #3 in SQL form: catching when a query returns the wrong number of rows because a join silently duplicated or dropped data.</p>
 </section>
 
 <section>
   <h2>Learning Goals</h2>
   <div class="goal-list">
     <ul>
-      <li>All four join types, each with a clear use case</li>
-      <li>Drill Skill #3 specifically against the silent-duplication trap</li>
-      <li>Ship: 16 questions across Chinook and Northwind + the &ldquo;bugs I caught&rdquo; reflection essay</li>
+      <li>Read and write all four join types: INNER, LEFT, RIGHT, FULL OUTER</li>
+      <li>Use subqueries and CTEs to build multi-step queries readably</li>
+      <li>Apply Skill #3 (validate output against domain knowledge) to SQL results</li>
+      <li>Ship a &ldquo;Customer 360&rdquo; SQL analysis that pulls from every table in the schema</li>
     </ul>
   </div>
 </section>
 
-<div class="locked-preview">
-  <h3>Content Releases After Week 4</h3>
-  <p>Full join-by-join drill pattern, duplication-trap examples, and cross-database question set unlock after Week 4 commit.</p>
-</div>
-
 <section>
-  <h2>AI Co-Work Pattern (Preview)</h2>
-  <p>Claude will sometimes write a query that returns $4.2M when the right answer is $420K &mdash; because a JOIN duplicated rows. Your job: always run <code>SELECT COUNT(*)</code> before and after the join, and sanity-check the totals.</p>
+  <h2>Why Joins Are the Scary Part</h2>
+  <p>Almost every interview SQL question hinges on joins. They're scary because two mistakes look the same as correct answers:</p>
+  <ol>
+    <li><strong>Duplicate rows</strong> &mdash; you joined to a one-to-many relationship and didn't realize it. Your total revenue comes back 3x what it should be because every customer row was duplicated three times.</li>
+    <li><strong>Missing rows</strong> &mdash; you used INNER JOIN when you needed LEFT. You're missing every customer who doesn't have a transaction yet. Your top-10 list is wrong because five customers got silently dropped.</li>
+  </ol>
+  <p>Both mistakes return query results that look reasonable. The validation habit from Week 3 is what catches them. You know roughly how many customers you should have. If the query returns a weird number, something is off.</p>
 </section>
 
 <section>
-  <h2>Resources (Preview)</h2>
+  <h2>AI Co-Work Pattern &mdash; Skill #3 in SQL Form</h2>
+  <div class="callout featured">
+    <h3>The join validation drill</h3>
+    <p>Every time Claude writes a query with a JOIN, run these checks before you use the result:</p>
+    <ol>
+      <li><strong>Row count check</strong> &mdash; before running the full query, ask Claude to return just COUNT(*). Is the row count what you expected? If you had 25 customers and joined to transactions, the count should match something logical (number of transactions, or number of customers with transactions, depending on query intent).</li>
+      <li><strong>Grain check</strong> &mdash; what is one row in your result? One customer? One transaction? One customer-month? If you can't answer that in one sentence, the query isn't right.</li>
+      <li><strong>Null check</strong> &mdash; in a LEFT JOIN, rows from the left table with no match show NULLs for the right table's columns. Is that handled? Are you aggregating NULL-including columns correctly?</li>
+    </ol>
+  </div>
+
+  <h3>Example of the drill</h3>
+  <pre><code>I asked Claude to write a query:
+"Show me total transaction amount per customer."
+
+Claude wrote:
+SELECT c.customer_name, SUM(t.amount) AS total_amount
+FROM customers c
+INNER JOIN accounts a ON a.customer_id = c.customer_id
+INNER JOIN transactions t ON t.account_id = a.account_id
+GROUP BY c.customer_name;
+
+My row count check: result had 23 rows. I have 25 customers. Where
+are the other 2?
+
+I push back:
+"I got 23 rows but I have 25 customers. Are two customers missing
+because they don't have accounts or transactions? How do I get a
+query that shows all 25 customers including zeros?"
+
+Claude rewrites with LEFT JOIN. Now I get 25 rows, two showing $0.
+That's the right answer for the question I actually meant to ask.</code></pre>
+</section>
+
+<section>
+  <h2>The Five Drills</h2>
+  <p>Same treasury schema from Week 4 (reload it in a fresh DB Fiddle session if needed).</p>
+
+  <h4>Drill 1 &mdash; INNER JOIN</h4>
+  <pre><code>Walk me through INNER JOIN. Specifically:
+
+1. What does INNER JOIN return vs what does it exclude?
+2. Write a query that shows customer_name alongside each of their
+   accounts' account_type and current_balance
+3. What happens if a customer has no accounts? What happens if an
+   account has no customer (orphan)?
+
+After you write the query, run a COUNT(*) version first so I can
+verify the row count before looking at the data.</code></pre>
+
+  <h4>Drill 2 &mdash; LEFT JOIN</h4>
+  <pre><code>Now LEFT JOIN. Specifically:
+
+1. Explain the difference between INNER and LEFT JOIN with a
+   concrete example
+2. Write a query that shows every customer, with their count of
+   transactions (zero included for customers with none)
+3. Write a query that finds customers who have an account but
+   zero transactions in the past 90 days (classic "dormant"
+   question)
+
+For #3, walk me through why LEFT JOIN + WHERE clause on the right
+table has a gotcha, and how to use WHERE vs ON-clause filtering
+to handle it correctly.</code></pre>
+
+  <h4>Drill 3 &mdash; FULL OUTER JOIN and RIGHT JOIN</h4>
+  <pre><code>FULL OUTER JOIN and RIGHT JOIN are less common. Explain:
+
+1. When would you use FULL OUTER? (Hint: reconciling two data
+   sources that might each have records the other doesn't)
+2. Why is RIGHT JOIN rare in practice? Could you always rewrite
+   it as a LEFT JOIN?
+3. Give me a concrete treasury example where FULL OUTER is the
+   right answer. Something like reconciling our transactions
+   table against a bank statement import.
+
+Write the SQL and explain what rows appear and what NULLs mean in
+each case.</code></pre>
+
+  <h4>Drill 4 &mdash; Subqueries</h4>
+  <pre><code>Now subqueries. Explain three patterns:
+
+1. Subquery in WHERE clause (find customers whose total transactions
+   are above average)
+2. Subquery in FROM clause (summarize first, then query the summary)
+3. Subquery in SELECT clause (the scalar one — for each customer,
+   what percentage of all transactions is theirs?)
+
+Write one example of each. Run a simpler non-subquery version first
+for comparison so I see why the subquery is needed.
+
+Also: explain when a CTE (next drill) is a better choice than a
+subquery.</code></pre>
+
+  <h4>Drill 5 &mdash; Common Table Expressions (CTEs)</h4>
+  <pre><code>CTEs are subqueries that get a name and go at the top. Explain:
+
+1. Syntax: WITH cte_name AS (...)
+2. Why readability is the main reason to prefer CTEs over deeply
+   nested subqueries
+3. Multiple CTEs chained together (this is what senior analysts
+   do)
+
+Build one complex query as a single hard-to-read subquery chain,
+then rewrite it as a CTE-based query. Show both. Explain which
+one you'd want to see on a job-interview whiteboard.
+
+The question: "For each customer segment, what's the average
+transaction amount among customers who have at least 3 accounts?"</code></pre>
+</section>
+
+<section>
+  <h2>Mini-Project &mdash; Customer 360 Analysis</h2>
+  <p>Deliverable: a single SQL query (as a CTE chain) that builds a complete &ldquo;Customer 360&rdquo; view. Plus a README with business interpretation.</p>
+
+  <h3>The Customer 360 view should include, per customer</h3>
+  <ol>
+    <li>Customer name and segment</li>
+    <li>Total account balance (across all accounts)</li>
+    <li>Count of accounts</li>
+    <li>Total transaction count, last 12 months</li>
+    <li>Total deposits and total withdrawals, last 12 months</li>
+    <li>Net flow (deposits minus withdrawals)</li>
+    <li>Count of overdue payments</li>
+    <li>A computed &ldquo;health score&rdquo; from 1-5 based on the fields above (your logic, documented in comments)</li>
+  </ol>
+
+  <h3>How to build it with Claude</h3>
+  <p>Start a new conversation in your Week 5 Project. Prompt:</p>
+  <pre><code>I'm building a Customer 360 view using CTEs. I want one row per
+customer with all the fields listed [paste the list above].
+
+Help me build it step by step:
+1. First, draft the CTE chain architecture: what CTEs do I need,
+   and in what order?
+2. Then we'll build each CTE one at a time. After each, I'll run
+   it in DB Fiddle and validate the row count and sample values.
+3. Finally we'll join all the CTEs together in the final SELECT.
+
+Don't write the whole thing at once. Build it layer by layer so I
+catch errors before they compound.</code></pre>
+  <p>This is the iteration pattern from Skill #4 (next week). You're already using it.</p>
+
+  <h3>Portfolio entry</h3>
+  <p>Push to <code>stephen-data-portfolio/week_05_customer_360/</code>:</p>
   <ul>
-    <li>Kaggle Intro to SQL (remaining lessons, join-heavy)</li>
-    <li>SQLBolt intermediate lessons</li>
-    <li><a href="https://github.com/microsoft/sql-server-samples" rel="noopener">Microsoft SQL Server Samples</a> (Northwind)</li>
-    <li>YouTube: &ldquo;Visual JOINs explained&rdquo; (any of several good 10-min videos)</li>
+    <li><code>customer_360.sql</code> &mdash; the final CTE-based query with heavy comments</li>
+    <li><code>README.md</code> &mdash; what the view shows, the health score logic, and three business insights you found in the results</li>
+    <li><code>sample_output.csv</code> &mdash; a saved copy of the first 25 rows so recruiters can see actual results without running the query</li>
   </ul>
 </section>
 
 <section>
-  <h2>Mini-Project (Preview)</h2>
-  <p>Cross-database analysis: 8 questions requiring 3+ table joins in Chinook, 8 in Northwind. Plus a 500-word essay: &ldquo;The duplicated-row bugs I caught and how I caught them.&rdquo;</p>
+  <h2>Resources</h2>
+  <table>
+    <tr><th>Resource</th><th>What it is</th><th>Required?</th></tr>
+    <tr>
+      <td><a href="https://claude.ai" rel="noopener">Claude Pro</a></td>
+      <td>Your pair partner for SQL.</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.db-fiddle.com" rel="noopener">DB Fiddle</a></td>
+      <td>Same schema as Week 4. Reload if needed.</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td><a href="https://stratascratch.com" rel="noopener">StrataScratch</a></td>
+      <td>Free tier has SQL interview practice problems, great for drilling joins</td>
+      <td>Optional</td>
+    </tr>
+    <tr>
+      <td><a href="../resources/alex-companion.html">Alex the Analyst joins video</a></td>
+      <td>Optional video on joins. Alex explains the Venn-diagram mental model well.</td>
+      <td>Optional</td>
+    </tr>
+  </table>
+</section>
+
+<section>
+  <h2>Time Budget</h2>
+  <table>
+    <tr><th>Block</th><th>Hours</th><th>Notes</th></tr>
+    <tr><td>Reload schema, review Week 4 notes</td><td>0.5</td><td>Monday</td></tr>
+    <tr><td>Five Claude join/subquery/CTE drills</td><td>4</td><td>~45 min each, Tue-Sat</td></tr>
+    <tr><td>Build Customer 360 CTE query, layer by layer</td><td>4</td><td>Thu-Fri</td></tr>
+    <tr><td>Portfolio README + sample output + commit</td><td>1</td><td>Saturday</td></tr>
+    <tr><td>Optional: 2-3 StrataScratch problems</td><td>1</td><td>Rolling, for interview prep</td></tr>
+    <tr><td>Sunday cowork hour with Jon</td><td>1</td><td>Walk through Customer 360, plan Week 6 (window functions)</td></tr>
+    <tr><td><strong>Total</strong></td><td><strong>~11</strong></td><td></td></tr>
+  </table>
+</section>
+
+<section>
+  <h2>How This Builds Forward</h2>
+  <p>Week 6 is the last SQL week and the hardest. Window functions (ROW_NUMBER, RANK, LAG, LEAD), date arithmetic, and CASE statements. You'll solve the top-N-per-group problem without subqueries, and you'll build running totals and period-over-period comparisons. The Kaggle Advanced SQL cert comes at the end of Week 6.</p>
+</section>
+
+<section>
+  <h2>Before You Start &mdash; Setup Checklist</h2>
+  <div class="goal-list">
+    <ul>
+      <li>New Claude Project created: &ldquo;Stephen Data Course &mdash; Week 5&rdquo;</li>
+      <li>Project instructions updated (&ldquo;finished Week 4 SQL basics, now doing joins and CTEs&rdquo;)</li>
+      <li>Treasury schema from Week 4 reloaded in DB Fiddle</li>
+      <li>Kaggle Intro to SQL cert earned (from Week 4)</li>
+    </ul>
+  </div>
 </section>
 
 <div class="page-nav">
-  <a href="week-04.html"><span class="label">&larr; Previous</span><span class="title">Week 4: SQL Basics</span></a>
-  <a href="week-06.html" class="next"><span class="label">Next &rarr;</span><span class="title">Week 6: Analyst-Grade SQL</span></a>
+  <a href="week-04.html">
+    <span class="label">&larr; Previous</span>
+    <span class="title">Week 4: SQL Basics</span>
+  </a>
+  <a href="week-06.html" class="next">
+    <span class="label">Next &rarr;</span>
+    <span class="title">Week 6: Analyst-Grade SQL</span>
+  </a>
 </div>
 
-<div class="site-footer">Built for Stephen Branch by Jon Hayles (2026) &middot; Design inspired by <a href="https://html5up.net/editorial" rel="noopener">HTML5 UP Editorial</a> (CC-BY 3.0)</div>
+<div class="site-footer">
+  Built for Stephen Branch by Jon Hayles (2026) &middot; Design inspired by
+  <a href="https://html5up.net/editorial" rel="noopener">HTML5 UP Editorial</a> (CC-BY 3.0)
+</div>
+
 </main>
 </div>
 </body>
