@@ -3,87 +3,344 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Week 10: Python &amp; Pandas Foundations | Claude Co-Work</title>
+<title>Week 10: Python &amp; Pandas | Claude Co-Work</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/css/main.css">
 </head>
 <body>
 <div class="layout">
+
 <aside class="sidebar">
   <a href="../index.html" class="site-title">Claude Co-Work</a>
   <div class="site-tagline">Applied Data Analytics &middot; 12 Weeks</div>
-  <div class="nav-section"><div class="nav-label">Course</div><ul class="nav-list"><li><a href="../index.html">Course Home</a></li><li><a href="../how-it-works.html">How This Works</a></li></ul></div>
-  <div class="nav-section"><div class="nav-label">Phase 1 &middot; Foundation</div><ul class="nav-list"><li><a href="../phase-1/index.html">Phase Overview</a></li><ul class="nav-list nav-sub"><li><a href="../phase-1/week-01.html">Week 1: Claude as Pair Partner</a></li><li><a href="../phase-1/week-02.html">Week 2: Advanced Sheets/Excel</a></li><li><a href="../phase-1/week-03.html">Week 3: Financial Analysis</a></li></ul></ul></div>
-  <div class="nav-section"><div class="nav-label">Phase 2 &middot; SQL</div><ul class="nav-list"><li><a href="../phase-2/index.html">Phase Overview</a></li><ul class="nav-list nav-sub"><li><a href="../phase-2/week-04.html">Week 4: SQL Basics</a></li><li><a href="../phase-2/week-05.html">Week 5: Joins &amp; Aggregates</a></li><li><a href="../phase-2/week-06.html">Week 6: Analyst-Grade SQL</a></li></ul></ul></div>
-  <div class="nav-section"><div class="nav-label">Phase 3 &middot; Visualization</div><ul class="nav-list"><li><a href="../phase-3/index.html">Phase Overview</a></li><ul class="nav-list nav-sub"><li><a href="../phase-3/week-07.html">Week 7: Dashboard Fundamentals</a></li><li><a href="../phase-3/week-08.html">Week 8: Business Dashboards</a></li><li><a href="../phase-3/week-09.html">Week 9: Portfolio Assembly</a></li></ul></ul></div>
-  <div class="nav-section"><div class="nav-label">Phase 4 &middot; Python &amp; Capstone</div><ul class="nav-list"><li><a href="index.html">Phase Overview</a></li><ul class="nav-list nav-sub"><li><a href="week-10.html" class="current">Week 10: Python &amp; Pandas</a></li><li><a href="week-11.html">Week 11: Analytics Pandas</a></li><li><a href="week-12.html">Week 12: Capstone</a></li></ul></ul></div>
-  <div class="nav-section"><div class="nav-label">Tools</div><ul class="nav-list"><li><a href="../cert-tracker.html">Cert Tracker</a></li><li><a href="../resources/index.html">Resources</a></li></ul></div>
+
+  <div class="nav-section">
+    <div class="nav-label">Course</div>
+    <ul class="nav-list">
+      <li><a href="../index.html">Course Home</a></li>
+      <li><a href="../how-it-works.html">How This Works</a></li>
+    </ul>
+  </div>
+
+  <div class="nav-section">
+    <div class="nav-label">Phase 1 &middot; Foundation</div>
+    <ul class="nav-list">
+      <li><a href="../phase-1/index.html">Phase Overview</a></li>
+      <ul class="nav-list nav-sub">
+        <li><a href="../phase-1/week-01.html">Week 1: Claude as Pair Partner</a></li>
+        <li><a href="../phase-1/week-02.html">Week 2: Advanced Sheets/Excel</a></li>
+        <li><a href="../phase-1/week-03.html">Week 3: Financial Analysis</a></li>
+      </ul>
+    </ul>
+  </div>
+
+  <div class="nav-section">
+    <div class="nav-label">Phase 2 &middot; SQL</div>
+    <ul class="nav-list">
+      <li><a href="../phase-2/index.html">Phase Overview</a></li>
+      <ul class="nav-list nav-sub">
+        <li><a href="../phase-2/week-04.html">Week 4: SQL Basics</a></li>
+        <li><a href="../phase-2/week-05.html">Week 5: Joins &amp; Aggregates</a></li>
+        <li><a href="../phase-2/week-06.html">Week 6: Analyst-Grade SQL</a></li>
+      </ul>
+    </ul>
+  </div>
+
+  <div class="nav-section">
+    <div class="nav-label">Phase 3 &middot; Visualization</div>
+    <ul class="nav-list">
+      <li><a href="../phase-3/index.html">Phase Overview</a></li>
+      <ul class="nav-list nav-sub">
+        <li><a href="../phase-3/week-07.html">Week 7: Dashboard Fundamentals</a></li>
+        <li><a href="../phase-3/week-08.html">Week 8: Business Dashboards</a></li>
+        <li><a href="../phase-3/week-09.html">Week 9: Portfolio Assembly</a></li>
+      </ul>
+    </ul>
+  </div>
+
+  <div class="nav-section">
+    <div class="nav-label">Phase 4 &middot; Python &amp; Capstone</div>
+    <ul class="nav-list">
+      <li><a href="index.html">Phase Overview</a></li>
+      <ul class="nav-list nav-sub">
+        <li><a href="week-10.html" class="current">Week 10: Python &amp; Pandas</a></li>
+        <li><a href="week-11.html">Week 11: Analytics Pandas</a></li>
+        <li><a href="week-12.html">Week 12: Capstone</a></li>
+      </ul>
+    </ul>
+  </div>
+
+  <div class="nav-section">
+    <div class="nav-label">Tools</div>
+    <ul class="nav-list">
+      <li><a href="../cert-tracker.html">Cert Tracker</a></li>
+      <li><a href="../resources/index.html">Resources</a></li>
+    </ul>
+  </div>
 </aside>
 
 <main class="main">
+
 <div class="course-header">
   <div class="crumb"><a href="../index.html">Course Home</a> &rsaquo; <a href="index.html">Phase 4</a> &rsaquo; Week 10</div>
-  <h1>Week 10 &mdash; Python &amp; Pandas Foundations</h1>
-  <div class="tag-row"><span class="tag">Phase 4 &middot; Python</span><span class="tag">Skill Focus: Command AI (pandas)</span><span class="tag">~15 hours</span></div>
-  <div class="progress-bar"><span class="progress-bar-label">Course Progress</span><div class="progress-bar-track"><div class="progress-bar-fill" style="width: 83.3%"></div></div><span class="progress-bar-label">Week 10 of 12</span></div>
+  <h1>Week 10 &mdash; Python &amp; Pandas</h1>
+  <div class="tag-row">
+    <span class="tag">Phase 4 &middot; Python &amp; Capstone</span>
+    <span class="tag">Skill Focus: Command AI to Execute (Python Edition)</span>
+    <span class="tag">Cert: Kaggle Pandas (Week 10-11)</span>
+    <span class="tag">~12 hours</span>
+  </div>
+  <div class="progress-bar">
+    <span class="progress-bar-label">Course Progress</span>
+    <div class="progress-bar-track"><div class="progress-bar-fill" style="width: 83.3%"></div></div>
+    <span class="progress-bar-label">Week 10 of 12</span>
+  </div>
 </div>
 
 <button class="btn btn-secondary print-btn" onclick="window.print()">Print this packet</button>
 
 <section>
-  <p class="lead">Python syntax. Pandas DataFrame fundamentals. Google Colab as your working environment. Rebuild Chinook in pandas so you can translate fluently between SQL and pandas &mdash; most of what pandas interviews test.</p>
+  <p class="lead">Python is the language analysts write when SQL isn't enough. This week you learn enough Python to read pandas code in a job posting, not be scared of it, and use it to redo analyses you already wrote in SQL. The tool is Google Colab, it runs in the browser, and it doesn't ask you to install anything.</p>
 </section>
 
 <section>
   <h2>Learning Goals</h2>
   <div class="goal-list">
     <ul>
-      <li>Python syntax basics (variables, control flow, functions, comprehensions)</li>
-      <li>Pandas fundamentals: read_csv, filter, groupby, merge</li>
-      <li>Drill Skill #2 again in pandas context &mdash; LDTV loop: Load, Describe, Transform, Validate</li>
-      <li>Ship: Chinook-in-pandas notebook + reflection on SQL-vs-pandas tradeoffs</li>
+      <li>Read and modify pandas code with confidence (you don't need to write it from scratch)</li>
+      <li>Load CSVs, clean data, compute summary statistics in a Colab notebook</li>
+      <li>Apply Skill #2 (command AI to execute) to yet another tool</li>
+      <li>Start the Kaggle Pandas course (finish in Week 11 for the cert)</li>
+      <li>Redo one of your Week 4-6 SQL analyses in pandas and commit both versions</li>
     </ul>
   </div>
 </section>
 
-<div class="locked-preview">
-  <h3>Content Releases After Week 9</h3>
-  <p>Full LDTV loop drill, Colab setup walkthrough, and Chinook-in-pandas rebuild template unlock after Phase 3 completion.</p>
-</div>
-
 <section>
-  <h2>AI Co-Work Pattern (Preview) &mdash; The LDTV Loop</h2>
-  <p><strong>L</strong>oad (paste <code>df.info()</code> and <code>df.head()</code>, confirm Claude sees the dtypes). <strong>D</strong>escribe (English transformation, not code). <strong>T</strong>ransform (Claude writes pandas, you run in Colab). <strong>V</strong>alidate (paste output, ask Claude to walk the cross-check vs an equivalent SQL path).</p>
+  <h2>Why Python and Why Colab</h2>
+  <p>Every mid-level and senior analyst job description lists Python as a requirement or preferred skill. You don't need to be a software engineer. You need to be able to load a CSV, clean it, compute aggregates, and make a chart. Pandas is the library that does all of that.</p>
+  <p>Google Colab is Jupyter notebooks hosted in your browser. Free. No install. Free GPU if you ever need it (you won't this week). It's the fastest way to run Python without setting up your laptop for development.</p>
+  <p>You are not going to become a Python expert in three weeks. The goal is: you can read pandas code, understand it, modify it with Claude's help, and have a few notebooks in your portfolio. That's enough to pass a screening for analyst roles that list Python.</p>
 </section>
 
 <section>
-  <h2>Resources (Preview)</h2>
+  <h2>AI Co-Work Pattern &mdash; Skill #2 Applied (Again)</h2>
+  <div class="callout featured">
+    <h3>Transferring the pattern from SQL</h3>
+    <p>Here's the cool part: the drill is exactly the same as Week 4 (SQL). Describe what you want in plain English. Claude writes pandas code. You read every line before running it. You paste into Colab. You check output. You ask about edge cases.</p>
+    <p>If the pattern felt solid in Week 4, it'll feel solid here. You're not learning a new AI skill. You're applying the same skill to a new tool. That's the whole point of having skills instead of memorizing syntax.</p>
+  </div>
+</section>
+
+<section>
+  <h2>The Week in Three Tracks</h2>
+
+  <h3>Track 1 &mdash; Kaggle Pandas (the cert, part 1)</h3>
+  <p>Go to <a href="https://www.kaggle.com/learn/pandas" rel="noopener">Kaggle Learn Pandas</a>. Work through the first 3-4 lessons this week. Finish the course in Week 11 for the cert. Each lesson is in a browser notebook so you're actually writing code, not watching videos.</p>
+
+  <h3>Track 2 &mdash; Claude Pandas Drills</h3>
+  <p>Five drills in Google Colab, same pattern as the SQL weeks. Each ~45 min.</p>
+
+  <h3>Track 3 &mdash; Redo a SQL Analysis in Pandas</h3>
+  <p>Pick one of your Week 4-6 SQL queries (something you validated and trust). Reimplement it in pandas. Side-by-side commit to your portfolio showing both versions.</p>
+</section>
+
+<section>
+  <h2>The Five Drills</h2>
+
+  <h4>Drill 1 &mdash; Load a CSV and explore</h4>
+  <pre><code>I'm in Google Colab, brand new notebook. I want to load a CSV of
+treasury transactions. Walk me through:
+
+1. How to upload a file to Colab (drag into the file panel)
+2. Import pandas, read_csv with the right parameters
+3. The four commands every analyst runs first on new data:
+   - df.head()
+   - df.info()
+   - df.describe()
+   - df.shape
+4. What each of those tells me and what I should watch out for
+5. How to see only specific columns or the first 5 rows
+
+Show me the code as a single notebook cell I can paste and run.
+Add a comment on every line explaining what it does.</code></pre>
+
+  <h4>Drill 2 &mdash; Filter and sort (pandas equivalent of WHERE and ORDER BY)</h4>
+  <pre><code>Translate these SQL queries to pandas:
+
+1. SELECT * FROM transactions WHERE amount > 1000
+2. SELECT * FROM transactions WHERE transaction_type = 'Withdrawal'
+   AND amount > 500
+3. SELECT * FROM transactions WHERE description LIKE '%Wire%'
+4. SELECT * FROM transactions ORDER BY amount DESC LIMIT 10
+
+For each pandas version, explain:
+- How the syntax differs from SQL
+- The most common beginner mistake (&amp; vs AND, quotes vs strings)
+- When you'd want to use .query() method vs boolean indexing
+
+Use the same treasury data from Week 4 (I'll export my DB Fiddle
+data to CSV and upload).</code></pre>
+
+  <h4>Drill 3 &mdash; Groupby and aggregation (pandas equivalent of GROUP BY)</h4>
+  <pre><code>Translate these SQL queries to pandas:
+
+1. SELECT transaction_type, COUNT(*), SUM(amount)
+   FROM transactions GROUP BY transaction_type
+2. SELECT customer_segment, AVG(amount)
+   FROM transactions JOIN accounts JOIN customers
+   GROUP BY customer_segment
+3. SELECT account_id, SUM(CASE WHEN amount > 0 THEN amount ELSE 0 END) AS deposits,
+          SUM(CASE WHEN amount &lt; 0 THEN ABS(amount) ELSE 0 END) AS withdrawals
+   FROM transactions GROUP BY account_id
+
+For each:
+- Show the pandas code
+- Explain the .groupby() pattern and .agg() method
+- Show an alternate way using pd.pivot_table and when you'd prefer it</code></pre>
+
+  <h4>Drill 4 &mdash; Handle dates and time series</h4>
+  <pre><code>Dates in pandas are slightly annoying at first. Walk me through:
+
+1. Converting a string column to datetime: pd.to_datetime
+2. Extracting year, month, day-of-week from a datetime column
+3. Filtering to a date range (all of 2025)
+4. Resampling to monthly totals: df.resample('M').sum()
+5. Computing month-over-month change
+
+Show me a complete code cell that loads my treasury CSV, converts
+transaction_date, computes monthly total, and shows the 5 months
+with highest transaction count.</code></pre>
+
+  <h4>Drill 5 &mdash; Save and export</h4>
+  <pre><code>I have a pandas dataframe with analysis results. I want to:
+
+1. Save to CSV for my portfolio
+2. Save to Excel (so I can share with non-technical people)
+3. Export a summary stats table as markdown for a README
+4. Save the whole notebook as a PDF for archival
+
+Walk me through each one in Colab. What are the gotchas (encoding,
+index saving, file paths in Colab)?</code></pre>
+</section>
+
+<section>
+  <h2>Mini-Project &mdash; The Side-by-Side Analysis</h2>
+  <p>Deliverable: one of your Week 4-6 SQL analyses reimplemented in pandas, with both versions committed and a README showing them side by side.</p>
+
+  <h3>Which analysis to pick</h3>
+  <p>Pick something non-trivial. The Customer 360 from Week 5 is good. The period-over-period from Week 6 is better. Something that uses joins, groupby, and computed columns.</p>
+
+  <h3>How to build it with Claude</h3>
+  <pre><code>I have a SQL query that does [describe the analysis]. Here's the
+query: [paste the .sql file]
+
+Reimplement this in pandas. Write a single Colab notebook that:
+1. Loads the source CSVs (I'll upload them)
+2. Does the same joins, filters, aggregations as the SQL
+3. Returns a dataframe with the same columns and rows as the SQL
+   result
+4. Has comments mapping each pandas step to the corresponding SQL
+   step
+
+After I run it, we'll compare the output to the SQL result and
+confirm they match row-for-row.</code></pre>
+
+  <h3>The comparison</h3>
+  <p>Run both. The pandas output and the SQL output should be identical. If they're not, something is wrong in one of them. Track it down. This is Skill #3 (validate) applied.</p>
+
+  <h3>Portfolio entry</h3>
+  <p>Push to <code>stephen-data-portfolio/week_10_sql_to_pandas/</code>:</p>
   <ul>
-    <li><a href="https://www.kaggle.com/learn/python" rel="noopener">Kaggle Python</a> (skip if Python is familiar)</li>
-    <li><a href="https://www.kaggle.com/learn/pandas" rel="noopener">Kaggle Pandas</a> (free cert, core this week)</li>
-    <li><a href="https://colab.research.google.com" rel="noopener">Google Colab</a> (free T4 tier)</li>
-    <li><a href="https://github.com/microsoft/Data-Science-For-Beginners" rel="noopener">MS DS-for-Beginners</a> Python section</li>
-    <li>Alex the Analyst: Python &amp; pandas videos (see <a href="../resources/alex-companion.html">Alex Companion</a>)</li>
+    <li><code>analysis.ipynb</code> &mdash; the Colab notebook (Colab can download as .ipynb)</li>
+    <li><code>analysis.sql</code> &mdash; the original SQL query (copy from an earlier week)</li>
+    <li><code>README.md</code> &mdash; side-by-side comparison with notes on which is easier for what</li>
   </ul>
+  <p>This piece demonstrates transfer: you can read the same problem in two languages. That's a stronger signal than knowing one language deeply but not the other.</p>
 </section>
 
 <section>
-  <h2>Mini-Project (Preview)</h2>
-  <p>Redo the ten Chinook SQL questions from Week 4 in pandas. Same answers, different tool. Add a reflection: &ldquo;Which tool was better for each question and why?&rdquo; The reflection is a useful interview-talking-point in itself.</p>
+  <h2>Resources</h2>
+  <table>
+    <tr><th>Resource</th><th>What it is</th><th>Required?</th></tr>
+    <tr>
+      <td><a href="https://claude.ai" rel="noopener">Claude Pro</a></td>
+      <td>Your pandas pair partner</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td><a href="https://colab.research.google.com" rel="noopener">Google Colab</a></td>
+      <td>Browser-based Jupyter notebooks, free, no install</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.kaggle.com/learn/pandas" rel="noopener">Kaggle Learn Pandas</a></td>
+      <td>The cert. Free. Finish in Week 11.</td>
+      <td>Yes (cert)</td>
+    </tr>
+    <tr>
+      <td><a href="https://pandas.pydata.org/docs/user_guide/10min.html" rel="noopener">10 Minutes to pandas (official docs)</a></td>
+      <td>Canonical quick-start, worth reading once</td>
+      <td>Optional</td>
+    </tr>
+    <tr>
+      <td><a href="../resources/alex-companion.html">Data School YouTube (pandas Q&amp;A)</a></td>
+      <td>Kevin Markham's short pandas videos, great companion</td>
+      <td>Optional</td>
+    </tr>
+  </table>
 </section>
 
 <section>
-  <h2>Cert Progress</h2>
-  <p>Kaggle Pandas cert earned. Fifth (or fourth, if GAIQ skipped) free cert in the portfolio.</p>
+  <h2>Time Budget</h2>
+  <table>
+    <tr><th>Block</th><th>Hours</th><th>Notes</th></tr>
+    <tr><td>Kaggle Pandas lessons 1-4</td><td>2.5</td><td>Tue-Wed</td></tr>
+    <tr><td>Five Claude pandas drills</td><td>3.5</td><td>Tue-Fri</td></tr>
+    <tr><td>Side-by-side SQL-to-pandas reimplementation</td><td>3</td><td>Thu-Sat</td></tr>
+    <tr><td>README + commit</td><td>1</td><td>Saturday</td></tr>
+    <tr><td>Continue job applications from Week 9 (3 more)</td><td>1</td><td>Rolling</td></tr>
+    <tr><td>Sunday cowork hour with Jon</td><td>1</td><td>Walk through the notebook, plan Week 11</td></tr>
+    <tr><td><strong>Total</strong></td><td><strong>~12</strong></td><td>Job search continues in parallel</td></tr>
+  </table>
+</section>
+
+<section>
+  <h2>How This Builds Forward</h2>
+  <p>Week 11 goes deeper on pandas: multi-index, merge, pivot, matplotlib basics. You finish the Kaggle Pandas cert. Then Week 12 integrates everything into the capstone: SEC EDGAR + FRED + US Treasury Fiscal Data combined into one real analysis, using SQL and pandas and a dashboard. That becomes the piece you put at the top of your portfolio.</p>
+</section>
+
+<section>
+  <h2>Before You Start &mdash; Setup Checklist</h2>
+  <div class="goal-list">
+    <ul>
+      <li>New Claude Project created: &ldquo;Stephen Data Course &mdash; Week 10&rdquo;</li>
+      <li>Project instructions updated (&ldquo;starting Python/pandas, have finished SQL and viz&rdquo;)</li>
+      <li>Google Colab bookmarked and tested (create a new notebook, run 'print(&quot;hello&quot;)')</li>
+      <li>Kaggle account still active from Week 4 (Kaggle Pandas builds on same login)</li>
+      <li>Treasury CSVs from Weeks 4-6 exported and ready to upload</li>
+      <li>Continue job applications from Week 9 (3 more this week)</li>
+    </ul>
+  </div>
 </section>
 
 <div class="page-nav">
-  <a href="../phase-3/week-09.html"><span class="label">&larr; Previous</span><span class="title">Week 9: Portfolio Assembly</span></a>
-  <a href="week-11.html" class="next"><span class="label">Next &rarr;</span><span class="title">Week 11: Analytics Pandas</span></a>
+  <a href="../phase-3/week-09.html">
+    <span class="label">&larr; Previous</span>
+    <span class="title">Week 9: Portfolio Assembly</span>
+  </a>
+  <a href="week-11.html" class="next">
+    <span class="label">Next &rarr;</span>
+    <span class="title">Week 11: Analytics Pandas</span>
+  </a>
 </div>
 
-<div class="site-footer">Built for Stephen Branch by Jon Hayles (2026) &middot; Design inspired by <a href="https://html5up.net/editorial" rel="noopener">HTML5 UP Editorial</a> (CC-BY 3.0)</div>
+<div class="site-footer">
+  Built for Stephen Branch by Jon Hayles (2026) &middot; Design inspired by
+  <a href="https://html5up.net/editorial" rel="noopener">HTML5 UP Editorial</a> (CC-BY 3.0)
+</div>
+
 </main>
 </div>
 </body>

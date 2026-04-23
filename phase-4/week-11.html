@@ -3,81 +3,354 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Week 11: Analytics-Grade Pandas | Claude Co-Work</title>
+<title>Week 11: Analytics Pandas | Claude Co-Work</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/css/main.css">
 </head>
 <body>
 <div class="layout">
+
 <aside class="sidebar">
   <a href="../index.html" class="site-title">Claude Co-Work</a>
   <div class="site-tagline">Applied Data Analytics &middot; 12 Weeks</div>
-  <div class="nav-section"><div class="nav-label">Course</div><ul class="nav-list"><li><a href="../index.html">Course Home</a></li><li><a href="../how-it-works.html">How This Works</a></li></ul></div>
-  <div class="nav-section"><div class="nav-label">Phase 1 &middot; Foundation</div><ul class="nav-list"><li><a href="../phase-1/index.html">Phase Overview</a></li><ul class="nav-list nav-sub"><li><a href="../phase-1/week-01.html">Week 1: Claude as Pair Partner</a></li><li><a href="../phase-1/week-02.html">Week 2: Advanced Sheets/Excel</a></li><li><a href="../phase-1/week-03.html">Week 3: Financial Analysis</a></li></ul></ul></div>
-  <div class="nav-section"><div class="nav-label">Phase 2 &middot; SQL</div><ul class="nav-list"><li><a href="../phase-2/index.html">Phase Overview</a></li><ul class="nav-list nav-sub"><li><a href="../phase-2/week-04.html">Week 4: SQL Basics</a></li><li><a href="../phase-2/week-05.html">Week 5: Joins &amp; Aggregates</a></li><li><a href="../phase-2/week-06.html">Week 6: Analyst-Grade SQL</a></li></ul></ul></div>
-  <div class="nav-section"><div class="nav-label">Phase 3 &middot; Visualization</div><ul class="nav-list"><li><a href="../phase-3/index.html">Phase Overview</a></li><ul class="nav-list nav-sub"><li><a href="../phase-3/week-07.html">Week 7: Dashboard Fundamentals</a></li><li><a href="../phase-3/week-08.html">Week 8: Business Dashboards</a></li><li><a href="../phase-3/week-09.html">Week 9: Portfolio Assembly</a></li></ul></ul></div>
-  <div class="nav-section"><div class="nav-label">Phase 4 &middot; Python &amp; Capstone</div><ul class="nav-list"><li><a href="index.html">Phase Overview</a></li><ul class="nav-list nav-sub"><li><a href="week-10.html">Week 10: Python &amp; Pandas</a></li><li><a href="week-11.html" class="current">Week 11: Analytics Pandas</a></li><li><a href="week-12.html">Week 12: Capstone</a></li></ul></ul></div>
-  <div class="nav-section"><div class="nav-label">Tools</div><ul class="nav-list"><li><a href="../cert-tracker.html">Cert Tracker</a></li><li><a href="../resources/index.html">Resources</a></li></ul></div>
+
+  <div class="nav-section">
+    <div class="nav-label">Course</div>
+    <ul class="nav-list">
+      <li><a href="../index.html">Course Home</a></li>
+      <li><a href="../how-it-works.html">How This Works</a></li>
+    </ul>
+  </div>
+
+  <div class="nav-section">
+    <div class="nav-label">Phase 1 &middot; Foundation</div>
+    <ul class="nav-list">
+      <li><a href="../phase-1/index.html">Phase Overview</a></li>
+      <ul class="nav-list nav-sub">
+        <li><a href="../phase-1/week-01.html">Week 1: Claude as Pair Partner</a></li>
+        <li><a href="../phase-1/week-02.html">Week 2: Advanced Sheets/Excel</a></li>
+        <li><a href="../phase-1/week-03.html">Week 3: Financial Analysis</a></li>
+      </ul>
+    </ul>
+  </div>
+
+  <div class="nav-section">
+    <div class="nav-label">Phase 2 &middot; SQL</div>
+    <ul class="nav-list">
+      <li><a href="../phase-2/index.html">Phase Overview</a></li>
+      <ul class="nav-list nav-sub">
+        <li><a href="../phase-2/week-04.html">Week 4: SQL Basics</a></li>
+        <li><a href="../phase-2/week-05.html">Week 5: Joins &amp; Aggregates</a></li>
+        <li><a href="../phase-2/week-06.html">Week 6: Analyst-Grade SQL</a></li>
+      </ul>
+    </ul>
+  </div>
+
+  <div class="nav-section">
+    <div class="nav-label">Phase 3 &middot; Visualization</div>
+    <ul class="nav-list">
+      <li><a href="../phase-3/index.html">Phase Overview</a></li>
+      <ul class="nav-list nav-sub">
+        <li><a href="../phase-3/week-07.html">Week 7: Dashboard Fundamentals</a></li>
+        <li><a href="../phase-3/week-08.html">Week 8: Business Dashboards</a></li>
+        <li><a href="../phase-3/week-09.html">Week 9: Portfolio Assembly</a></li>
+      </ul>
+    </ul>
+  </div>
+
+  <div class="nav-section">
+    <div class="nav-label">Phase 4 &middot; Python &amp; Capstone</div>
+    <ul class="nav-list">
+      <li><a href="index.html">Phase Overview</a></li>
+      <ul class="nav-list nav-sub">
+        <li><a href="week-10.html">Week 10: Python &amp; Pandas</a></li>
+        <li><a href="week-11.html" class="current">Week 11: Analytics Pandas</a></li>
+        <li><a href="week-12.html">Week 12: Capstone</a></li>
+      </ul>
+    </ul>
+  </div>
+
+  <div class="nav-section">
+    <div class="nav-label">Tools</div>
+    <ul class="nav-list">
+      <li><a href="../cert-tracker.html">Cert Tracker</a></li>
+      <li><a href="../resources/index.html">Resources</a></li>
+    </ul>
+  </div>
 </aside>
 
 <main class="main">
+
 <div class="course-header">
   <div class="crumb"><a href="../index.html">Course Home</a> &rsaquo; <a href="index.html">Phase 4</a> &rsaquo; Week 11</div>
-  <h1>Week 11 &mdash; Analytics-Grade Pandas</h1>
-  <div class="tag-row"><span class="tag">Phase 4 &middot; Python</span><span class="tag">Skill Focus: Iterate with AI</span><span class="tag">~14&ndash;17 hours</span></div>
-  <div class="progress-bar"><span class="progress-bar-label">Course Progress</span><div class="progress-bar-track"><div class="progress-bar-fill" style="width: 91.6%"></div></div><span class="progress-bar-label">Week 11 of 12</span></div>
+  <h1>Week 11 &mdash; Analytics Pandas</h1>
+  <div class="tag-row">
+    <span class="tag">Phase 4 &middot; Python &amp; Capstone</span>
+    <span class="tag">Skill Focus: Iterate + Validate</span>
+    <span class="tag">Cert: Kaggle Pandas (finish)</span>
+    <span class="tag">~12 hours</span>
+  </div>
+  <div class="progress-bar">
+    <span class="progress-bar-label">Course Progress</span>
+    <div class="progress-bar-track"><div class="progress-bar-fill" style="width: 91.6%"></div></div>
+    <span class="progress-bar-label">Week 11 of 12</span>
+  </div>
 </div>
 
 <button class="btn btn-secondary print-btn" onclick="window.print()">Print this packet</button>
 
 <section>
-  <p class="lead">Time series in pandas. Reshaping. Multi-source merging. Plotting from pandas directly. Build the Treasury Liquidity Monitor using FRED data. You are likely interviewing by now &mdash; this notebook is walk-through-able in 5 minutes.</p>
+  <p class="lead">Deeper pandas this week: merge (the SQL JOIN equivalent), pivot_table, apply, and the visualization basics with matplotlib and seaborn. You finish the Kaggle Pandas cert and you get one week of practice before the capstone. Think of this as the final drill before game day.</p>
 </section>
 
 <section>
   <h2>Learning Goals</h2>
   <div class="goal-list">
     <ul>
-      <li>resample, rolling, shift for time series</li>
-      <li>pivot, melt, stack, unstack for reshaping</li>
-      <li>Drill Skill #4 again &mdash; iterate multi-step analyses with Claude without rewriting from scratch</li>
-      <li>Ship: Treasury Liquidity Monitor notebook + 500-word interpretation writeup</li>
+      <li>Use pandas merge, concat, join to combine multiple data sources</li>
+      <li>Build pivot tables and crosstabs that match what you'd do in Excel</li>
+      <li>Visualize pandas data with matplotlib and seaborn (static charts, code-generated)</li>
+      <li>Drill Skills #3 and #4: validate pandas output and iterate with Claude to refine</li>
+      <li>Finish Kaggle Pandas course (fifth of five certs)</li>
+      <li>Ship a multi-source pandas analysis with inline visualizations</li>
     </ul>
   </div>
 </section>
 
-<div class="locked-preview">
-  <h3>Content Releases After Week 10</h3>
-  <p>Time-series pattern, FRED API walkthrough, and interpretation-writeup template unlock after Week 10 commit.</p>
-</div>
-
 <section>
-  <h2>AI Co-Work Pattern (Preview)</h2>
-  <p>Skill #4 in pandas context. When Claude's first answer is 70% right, do not rewrite it yourself &mdash; describe what's wrong and let Claude patch. Never accept 50% right. Keep iterating until the output holds up to validation.</p>
+  <h2>AI Co-Work Pattern &mdash; Iterate + Validate</h2>
+  <div class="callout featured">
+    <h3>The pandas iteration pattern</h3>
+    <p>Pandas code is where you'll iterate the most. The first version Claude writes rarely handles your specific data cleanly. Expect 3-5 iterations per non-trivial analysis.</p>
+    <p>The tight loop:</p>
+    <ol>
+      <li>Describe what you want. Claude writes pandas code.</li>
+      <li>Run it. See an error? Paste the error back. Claude debugs.</li>
+      <li>Run it. Output looks off? Run the validation checks from Week 3 (row count, sign, magnitude, sensibility).</li>
+      <li>If validation fails, tell Claude specifically what's wrong. Iterate.</li>
+      <li>If validation passes, ask Claude what edge case could break it. Add defensive code if worth it.</li>
+    </ol>
+    <p>This pattern, repeated across 3-5 analyses this week, is what makes you good at pandas by the end.</p>
+  </div>
 </section>
 
 <section>
-  <h2>Resources (Preview)</h2>
+  <h2>The Five Drills</h2>
+
+  <h4>Drill 1 &mdash; Merge (the JOIN equivalent)</h4>
+  <pre><code>I have two CSVs:
+- customers.csv (customer_id, name, segment)
+- transactions.csv (transaction_id, customer_id, amount, date)
+
+I want a merged dataframe with customer name and segment on each
+transaction row. Walk me through:
+
+1. pd.merge syntax
+2. The four "how" options: inner, left, right, outer
+3. When to use on= vs left_on/right_on (different column names)
+4. The validate= parameter (1:1, 1:m, m:1, m:m) and why it saves you
+5. A common bug: duplicated rows after merge because of a
+   many-to-many relationship you didn't know existed
+
+For each of the four join types, write the code and tell me what
+the output row count should be (validation check).</code></pre>
+
+  <h4>Drill 2 &mdash; Pivot table</h4>
+  <pre><code>pd.pivot_table is the SQL crosstab/pivot equivalent. Build these:
+
+1. Transactions by transaction_type (rows) and customer_segment
+   (columns), values = SUM(amount)
+2. Monthly totals (rows = month, columns = transaction_type,
+   values = count)
+3. Customer matrix (rows = customer_name, columns = quarter,
+   values = SUM(amount))
+
+For each:
+- Write pd.pivot_table code
+- Show the equivalent .groupby().pivot() version
+- Explain when you'd prefer pivot_table vs groupby+unstack
+- Show how to fill missing cells with 0 or a placeholder</code></pre>
+
+  <h4>Drill 3 &mdash; apply and lambda functions</h4>
+  <pre><code>apply() lets you run a function on every row or column. Walk me
+through:
+
+1. .apply() on a Series (one column) with a simple lambda
+2. .apply() on a DataFrame with axis=1 (per-row)
+3. When to use apply vs vectorized operations (performance)
+4. Custom function definition (def my_func(row): ...)
+5. The common anti-pattern: using apply when a vectorized
+   operation would be 100x faster
+
+Example task: for each transaction, classify it as "High-Risk"
+if amount > $10000 AND transaction_type in ('Withdrawal', 'Transfer'),
+else "Normal." Show both apply-based and vectorized versions,
+explain which is better.</code></pre>
+
+  <h4>Drill 4 &mdash; Visualize with matplotlib and seaborn</h4>
+  <pre><code>Basic pandas viz is often enough for exploratory analysis. Walk me
+through matplotlib and seaborn for:
+
+1. df.plot() for quick exploration (bar, line, hist, scatter)
+2. plt.subplots() for multi-panel figures
+3. seaborn for prettier defaults and statistical visualizations
+   (seaborn.barplot, seaborn.heatmap, seaborn.boxplot)
+4. Saving figures to PNG for the portfolio
+
+Create these 5 visualizations with my treasury data:
+- Bar chart of total transaction amount by segment
+- Line chart of monthly transaction volume over time
+- Heatmap of transaction count by day-of-week and hour
+- Box plot of transaction amount by type (shows distribution)
+- Scatter plot of account balance vs transaction count per customer
+
+Save each as PNG. Apply the design principles from Week 7 (titles,
+axis labels, color).</code></pre>
+
+  <h4>Drill 5 &mdash; Multi-index and reshape</h4>
+  <pre><code>Multi-index dataframes are confusing at first and useful once
+you get them. Walk me through:
+
+1. What a multi-index is and why it exists
+2. Creating one with .set_index() on multiple columns
+3. Accessing rows: df.loc[(outer_key, inner_key)]
+4. .stack() and .unstack() for reshaping wide/long
+5. .reset_index() to flatten back to a regular dataframe
+
+Example: I have monthly revenue by segment. Show me how to reshape
+it from "long" (one row per segment-month) to "wide" (months as
+columns, segments as rows), do year-over-year math, then reshape
+back to long for saving.</code></pre>
+</section>
+
+<section>
+  <h2>Mini-Project &mdash; Multi-Source Analysis with Viz</h2>
+  <p>Deliverable: a Colab notebook that pulls two or three data sources, merges them, runs an analysis that requires both merge AND pivot_table, and produces three polished matplotlib charts. Committed to portfolio.</p>
+
+  <h3>The analysis question</h3>
+  <p>Pick one (or design your own):</p>
   <ul>
-    <li>Kaggle Pandas (finish if not complete)</li>
-    <li>Wes McKinney &ldquo;Python for Data Analysis&rdquo; (free online chapters)</li>
-    <li>YouTube: Corey Schafer pandas playlist (free, excellent)</li>
-    <li><a href="https://github.com/stefan-jansen/machine-learning-for-trading" rel="noopener">ML-for-Trading</a> (stale 2024-08, inspiration only)</li>
+    <li><strong>Customer profitability breakdown</strong>: merge transaction data with cost-to-serve estimates, compute profit margin per customer by segment, visualize distribution</li>
+    <li><strong>Cash flow seasonality</strong>: using treasury transactions over 2 years, identify seasonal patterns per quarter, visualize as a heatmap</li>
+    <li><strong>Payment timeliness degradation</strong>: merge customer master with payment history, identify which segments are getting slower to pay, visualize trend</li>
+  </ul>
+
+  <h3>How to build it with Claude</h3>
+  <pre><code>I'm building a [chosen analysis] in pandas. I have these data
+sources: [list].
+
+Architect the analysis as a sequence of steps:
+1. Load each source, inspect, clean
+2. Merge (specify the join type and keys, and the validation I
+   should do)
+3. Any pivot_table or groupby transformation
+4. Three visualizations that each answer one sub-question
+5. Written summary (bullets) of the top 3 findings
+
+Build each step one at a time. After each step I'll run it in
+Colab and share the output back. Only move to the next step when
+I confirm the current step validates correctly.</code></pre>
+
+  <h3>Portfolio entry</h3>
+  <p>Push to <code>stephen-data-portfolio/week_11_pandas_analysis/</code>:</p>
+  <ul>
+    <li><code>analysis.ipynb</code> &mdash; the Colab notebook with all cells run and outputs saved</li>
+    <li><code>figures/</code> &mdash; three PNG exports of the matplotlib charts</li>
+    <li><code>README.md</code> &mdash; one-page analysis writeup with findings, methodology, and the three charts embedded</li>
+    <li><code>data_sources.md</code> &mdash; where the data came from, what you merged, any caveats</li>
   </ul>
 </section>
 
 <section>
-  <h2>Mini-Project (Preview) &mdash; Treasury Liquidity Monitor</h2>
-  <p>Five FRED series over 5 years: 3-month yield, 10-year yield, Effective Fed Funds Rate, CPI, unemployment. Align on monthly index. Compute yield-curve spread, real interest rate, rolling 3-month and 12-month correlations. Plot with matplotlib. Output a printable &ldquo;current state&rdquo; summary table. The 500-word interpretation is the deliverable that shows domain reasoning, not just plotting.</p>
+  <h2>Resources</h2>
+  <table>
+    <tr><th>Resource</th><th>What it is</th><th>Required?</th></tr>
+    <tr>
+      <td><a href="https://claude.ai" rel="noopener">Claude Pro</a></td>
+      <td>Pair partner, heavy iteration this week</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td><a href="https://colab.research.google.com" rel="noopener">Google Colab</a></td>
+      <td>The notebook environment</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.kaggle.com/learn/pandas" rel="noopener">Kaggle Pandas</a></td>
+      <td>Finish the course this week for the cert</td>
+      <td>Yes (cert)</td>
+    </tr>
+    <tr>
+      <td><a href="https://seaborn.pydata.org/tutorial.html" rel="noopener">seaborn tutorial</a></td>
+      <td>Official tutorial, good for statistical viz patterns</td>
+      <td>Optional</td>
+    </tr>
+    <tr>
+      <td><a href="https://pandas.pydata.org/docs/user_guide/merging.html" rel="noopener">pandas merging docs</a></td>
+      <td>Reference for the merge/concat/join family</td>
+      <td>Reference</td>
+    </tr>
+  </table>
+</section>
+
+<section>
+  <h2>Time Budget</h2>
+  <table>
+    <tr><th>Block</th><th>Hours</th><th>Notes</th></tr>
+    <tr><td>Finish Kaggle Pandas course</td><td>2</td><td>Tue-Wed</td></tr>
+    <tr><td>Five Claude pandas drills</td><td>4</td><td>Tue-Fri</td></tr>
+    <tr><td>Multi-source analysis with viz (mini-project)</td><td>3</td><td>Thu-Sat</td></tr>
+    <tr><td>README + PNGs + commit</td><td>1</td><td>Saturday</td></tr>
+    <tr><td>Job search: 3-5 more applications, follow-ups on previous</td><td>1</td><td>Rolling</td></tr>
+    <tr><td>Sunday cowork hour with Jon</td><td>1</td><td>Walk through notebook, plan the capstone</td></tr>
+    <tr><td><strong>Total</strong></td><td><strong>~12</strong></td><td></td></tr>
+  </table>
+</section>
+
+<section>
+  <h2>How This Builds Forward</h2>
+  <p>Week 12 is the capstone. You'll take real public treasury data (SEC EDGAR + FRED + US Treasury Fiscal Data) and build one end-to-end analysis using SQL, pandas, and a dashboard. The capstone becomes the top item in your portfolio and probably the first thing you mention in interviews. This week's pandas practice is what makes the capstone buildable without you spending all of Week 12 on syntax lookups.</p>
+</section>
+
+<section>
+  <h2>Cert Earned This Week</h2>
+  <div class="callout featured">
+    <h3>Kaggle Pandas</h3>
+    <p>Complete the full course (started in Week 10). Cert appears on your Kaggle profile. Add to LinkedIn and <a href="../cert-tracker.html">Cert Tracker</a>. Fifth and final course cert.</p>
+  </div>
+</section>
+
+<section>
+  <h2>Before You Start &mdash; Setup Checklist</h2>
+  <div class="goal-list">
+    <ul>
+      <li>New Claude Project created: &ldquo;Stephen Data Course &mdash; Week 11&rdquo;</li>
+      <li>Project instructions updated (&ldquo;deeper pandas this week, merge/pivot/viz&rdquo;)</li>
+      <li>Colab notebook from Week 10 saved, accessible for reference</li>
+      <li>Treasury CSVs uploaded to new Week 11 Project</li>
+      <li>Continue job applications (3-5 more this week)</li>
+      <li>Pre-read Week 12 to know what the capstone data sources will be (SEC EDGAR, FRED, US Treasury Fiscal Data)</li>
+    </ul>
+  </div>
 </section>
 
 <div class="page-nav">
-  <a href="week-10.html"><span class="label">&larr; Previous</span><span class="title">Week 10: Python &amp; Pandas</span></a>
-  <a href="week-12.html" class="next"><span class="label">Next &rarr;</span><span class="title">Week 12: Capstone</span></a>
+  <a href="week-10.html">
+    <span class="label">&larr; Previous</span>
+    <span class="title">Week 10: Python &amp; Pandas</span>
+  </a>
+  <a href="week-12.html" class="next">
+    <span class="label">Next &rarr;</span>
+    <span class="title">Week 12: Capstone</span>
+  </a>
 </div>
 
-<div class="site-footer">Built for Stephen Branch by Jon Hayles (2026) &middot; Design inspired by <a href="https://html5up.net/editorial" rel="noopener">HTML5 UP Editorial</a> (CC-BY 3.0)</div>
+<div class="site-footer">
+  Built for Stephen Branch by Jon Hayles (2026) &middot; Design inspired by
+  <a href="https://html5up.net/editorial" rel="noopener">HTML5 UP Editorial</a> (CC-BY 3.0)
+</div>
+
 </main>
 </div>
 </body>
